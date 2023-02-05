@@ -12,12 +12,12 @@
 }
 
 body ::-moz-selection {
-  background: #0A34A2;
+  background: #2538AD;
   color: #fff;
 }
 
 body ::selection {
-  background: #0A34A2;
+  background: #2538AD;
   color: #fff;
 }
 
@@ -121,7 +121,7 @@ video {
   letter-spacing: -0.8px;
   font-weight: 400;
   line-height: 1.6;
-  color: #0A34A2;
+  color: #2538AD;
   word-break: keep-all;
   box-sizing: border-box;
 }
@@ -344,10 +344,10 @@ button {
   position: relative;
   top: 0;
   left: 0;
-  background: #0a34a2;
+  background: #2538AD;
   height: 2px;
   width: 60%;
-  background-color: #0a34a2;
+  background-color: #2538AD;
   transition: all 0.4s ease;
 }
 .header .h-menu .hamburger > div::before, .header .h-menu .hamburger > div::after {
@@ -356,7 +356,7 @@ button {
   top: -10px;
   width: 100%;
   height: 2px;
-  background: #0a34a2;
+  background: #2538AD;
   transition: all 0.4s ease;
 }
 .header .h-menu .hamburger > div::after {
@@ -410,7 +410,7 @@ button {
 }
 .nav-wrap > ul > li > a {
   position: relative;
-  color: #0a34a2;
+  color: #2538AD;
   text-decoration: none;
 }
 .nav-wrap > ul > li > a::after {
@@ -421,7 +421,7 @@ button {
   display: block;
   width: 0;
   height: 2px;
-  background-color: #0a34a2;
+  background-color: #2538AD;
   transition: all 0.4s ease;
 }
 
@@ -452,7 +452,7 @@ button {
 }
 .nav-wrap.active > ul > li > a:hover {
   color: #EFDDD1;
-  text-shadow: -1.4px 0 #0a34a2, 0 1.4px #0a34a2, 1.4px 0 #0a34a2, 0 -1.4px #0a34a2;
+  text-shadow: -1.4px 0 #2538AD, 0 1.4px #2538AD, 1.4px 0 #2538AD, 0 -1.4px #2538AD;
 }
 .nav-wrap.active > ul > li > a:hover::after {
   width: 100%;
@@ -567,7 +567,7 @@ button {
   margin-bottom: 1.6rem;
   line-height: 1.2;
   font-weight: 700;
-  color: #0a34a2;
+  color: #2538AD;
 }
 @media screen and (min-width: 768px) {
   .container .main_visual .inner .mv_title {
@@ -610,6 +610,7 @@ button {
   /*----section 공통스타일----*/
   padding: 6rem 0;
   /*-----------Work Experience 영역-----------*/
+  /*-----------Portfolio 영역-----------*/
 }
 .section .inner {
   padding: 0 24px;
@@ -665,16 +666,6 @@ button {
 .section.section-work-wrap .inner .sc-title-wrap .sc-title-bottom .text-wrap .title-deskTxt {
   font-weight: 600;
 }
-.section.section-work-wrap .inner .sc-title-wrap .sc-title-bottom .text-wrap .title-deskTxt span {
-  margin-left: 6px;
-  margin-bottom: 2px;
-  display: inline-block;
-  width: 0.5rem;
-  height: 0.5rem;
-  border-radius: 50%;
-  background-color: #0a34a2;
-  vertical-align: text-bottom;
-}
 @media screen and (max-width: 979px) {
   .section.section-work-wrap .inner .sc-title-wrap {
     margin-bottom: 3rem;
@@ -702,8 +693,11 @@ button {
 }
 .section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list {
   padding-bottom: 1.4rem;
-  border-bottom: 1px solid #0a34a2;
+  border-bottom: 1px solid #2538AD;
   margin-bottom: 2rem;
+}
+.section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list:last-child {
+  border-bottom: 0px;
 }
 .section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .work-title {
   margin-bottom: 1.4rem;
@@ -740,4 +734,202 @@ button {
 .section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .menu .list .date {
   font-size: 13px;
   font-weight: 500;
+}
+.section.section-portfolio-wrap {
+  background-color: #F2F1ED;
+}
+.section.section-portfolio-wrap .inner .sc-title-wrap {
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list {
+  margin-bottom: 2rem;
+  position: relative;
+  box-sizing: border-box;
+  border: 1px solid rgb(244, 244, 244);
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list:before {
+  content: "";
+  display: block;
+  padding-top: 100%; /* 1:1 비율 */
+}
+@media screen and (min-width: 768px) {
+  .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list {
+    width: 49%;
+    margin-bottom: 1.2rem;
+  }
+  .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list:nth-child(2n+0) {
+    transition-delay: 0.2s;
+  }
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-bg-wrap {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-title-wrap {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-title-wrap .label {
+  color: #ffffff;
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-title-wrap .project-name {
+  color: #ffffff;
+  font-weight: 600;
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-title-wrap .black {
+  color: #484848;
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-detail-wrap {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(37, 56, 173, 0.9);
+  transition: all 0.4s ease;
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-detail-wrap p {
+  color: #ffffff;
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-detail-wrap .button-view {
+  width: 140px;
+  opacity: 0.9;
+}
+.section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list:hover .p-detail-wrap {
+  transition: opacity 450ms ease-in-out;
+  opacity: 1;
+}
+
+.footer {
+  padding: 3rem 0;
+  background-color: #2538AD;
+}
+.footer .inner {
+  padding: 0 24px;
+}
+@media screen and (min-width: 768px) {
+  .footer .inner {
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .inner {
+    margin: 0 auto;
+    padding: 2rem 60px;
+    width: 1200px;
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .footer .inner {
+    width: 1400px;
+    max-width: 1400px;
+  }
+}
+.footer .inner .f-title {
+  margin-bottom: 2.6rem;
+  color: #ffffff;
+}
+.footer .inner .f-conts h3 {
+  color: #ffffff;
+}
+.footer .inner .f-conts p {
+  margin-bottom: 2rem;
+  color: #ffffff;
+  font-weight: 300;
+  opacity: 0.8;
+}
+.footer .inner .f-conts .sns-lists {
+  display: flex;
+  align-items: center;
+  margin-top: 1rem;
+}
+.footer .inner .f-conts .sns-lists li {
+  margin-right: 20px;
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+}
+.footer .inner .f-conts .sns-lists li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  display: felx;
+  align-items: center;
+  justify-content: center;
+}
+.footer .inner .f-conts .sns-lists li a img {
+  width: 80%;
+}
+@media screen and (min-width: 980px) {
+  .footer .inner .f-conts .sns-lists li {
+    width: 52px;
+    height: 52px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer .inner .f-conts .sns-lists li {
+    width: 56px;
+    height: 56px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer .inner .f-conts {
+    display: flex;
+    align-items: center;
+    align-items: flex-start;
+  }
+  .footer .inner .f-conts .f-others {
+    margin-left: 38%;
+  }
+}
+.footer .inner .copyright {
+  margin-top: 4rem;
+  color: #ffffff;
+  font-weight: 300;
+  opacity: 0.5;
+}
+
+.modal-wrap {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  max-width: 80%;
+  height: 200px;
+  max-height: 50%;
+  background-color: #ffffff;
+  border-radius: 1.4rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }/*# sourceMappingURL=index.css.map */
