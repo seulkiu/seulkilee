@@ -1,0 +1,103 @@
+/*INTERFACE*/
+/*스타일 묶음*/
+
+/*----color system----*/
+$color-main: #2538AD;
+$color-bg: #EFDDD1;
+$color-bg-grey: #F2F1ED;
+$color-point: #2538AD;
+$color-line: rgba(255,255,255,0.2);
+$color-black: #1d1d1d;
+$color-middle-black: #484848;
+$color-white: #ffffff;
+
+/*----font system----*/
+@mixin font-bigTitle {
+  font-size: 42px;
+  @media screen and (min-width: 768px) {
+    font-size: 5.4688vw;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 76px;
+  }
+}
+@mixin font-title{
+  font-size: 30px;
+  @media screen and (min-width:768px){
+    font-size: 3.648vw;
+  }
+  @media screen and (min-width:1200px){
+    font-size: 52px;
+  }
+}
+@mixin font-subTitle{
+  font-size: 20px;
+  @media screen and (min-width:768px){
+    font-size: 2.734vw;
+  }
+  @media screen and (min-width:1200px){
+    font-size: 28px;
+  }
+}
+@mixin font-deskBasic{
+  font-size: 17px;
+  @media screen and (max-width:320px){
+    font-size: 16px;
+  }
+  @media screen and (min-width:768px){
+    font-size: 2vw;
+  }
+  @media screen and (min-width:1200px){
+    font-size: 22px;
+  }
+}
+@mixin font-basic{
+  font-size:14px;
+  @media screen and (max-width:320px){
+    font-size: 13px;
+  }
+  @media screen and (min-width:768px){
+    font-size: 1.823vw;
+  }
+  @media screen and (min-width:980px){
+    font-size: 18px;
+  }
+}
+@mixin font-small{
+  font-size: 13px;
+  @media screen and (max-width:320px){
+    font-size:12px;
+  }
+  @media screen and (min-width:768px){
+    font-size: 1.448vw
+  }
+  @media screen and (min-width:1200px){
+    font-size: 14px;
+  }
+}
+
+/*----Media Query----*/
+/*max-width:320px*/
+@mixin mobile {
+  @media (max-width: #{breakpoint-mobile}) {
+    @content;
+  }
+}
+/*min-width:768px*/
+@mixin tablet-mini {
+  @media (min-width: #{$breakpoint-mobile}) {
+    @content;
+  }
+}
+/*min-width:980px*/
+@mixin tablet {
+  @media (min-width: #{$breakpoint-tablet}) {
+    @content;
+  }
+}
+/*min-width:1200px*/
+@mixin desktop {
+  @media (min-width: #{$breakpoint-desktop}) {
+    @content;
+  }
+}

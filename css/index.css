@@ -1,0 +1,743 @@
+@charset "UTF-8";
+/*RESET*/
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap");
+[lang=ko] {
+  font-family: "Noto Sans KR", "Montserrat", sans-serif, "맑은 고딕", "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
+}
+
+[lang=en] {
+  font-family: "Montserrat", "Noto Sans KR", sans-serif;
+  letter-spacing: -0.2px;
+}
+
+body ::-moz-selection {
+  background: #0A34A2;
+  color: #fff;
+}
+
+body ::selection {
+  background: #0A34A2;
+  color: #fff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 280px;
+  overflow-x: hidden;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 16px;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+  font-family: "Noto Sans KR", "Montserrat", sans-serif, "맑은 고딕", "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
+  letter-spacing: -0.8px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #0A34A2;
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
+strong {
+  font-weight: bold;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1.5;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+ol,
+ul,
+li {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: #333;
+  font-style: none;
+}
+
+/* input 기본 스타일 초기화 */
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid #eee;
+  padding: 15px 16px;
+  width: 100%;
+  border-radius: 12px;
+}
+
+/* IE10 이상에서 input box 에 추가된 지우기 버튼 제거 */
+input::-ms-clear {
+  display: none;
+}
+
+/* input type number 에서 화살표 제거 */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+  outline: none;
+}
+
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration,
+input[type=search]::-webkit-search-results-button,
+input[type=search]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+}
+
+input[type=search] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  outline: none;
+}
+
+textarea {
+  appearance: none;
+  overflow: auto;
+  vertical-align: top;
+  resize: vertical;
+  border: 1px solid #eee;
+  padding: 15px 16px;
+  width: 100%;
+  height: 88px;
+  border-radius: 12px;
+  font-family: "Noto Sans KR", "Montserrat", sans-serif, "맑은 고딕", "Nanum Gothic", "나눔 고딕", "돋움", dotum, sans-serif;
+}
+
+/* Select box 스타일 초기화 */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  box-sizing: border-box;
+  background-color: transparent;
+}
+
+/* IE 에서 Select box 화살표 제거 */
+select::-ms-expand {
+  display: none;
+}
+
+/* select:active,
+select:focus{border: 0; outline: none;} */
+/*Button Style*/
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+/*INTERFACE*/
+/*스타일 묶음*/
+/*----color system----*/
+/*----font system----*/
+/*----Media Query----*/
+/*max-width:320px*/
+/*min-width:768px*/
+/*min-width:980px*/
+/*min-width:1200px*/
+/*FUNCTION*/
+/*컴포넌트 묶음*/
+/*Media Query*/
+/*button components*/
+/*Flex*/
+.wrap {
+  background: #EFDDD1;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 0 24px;
+  height: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 3.2rem;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    margin-bottom: 4rem;
+    height: 5.4rem;
+  }
+}
+.header .h-menu {
+  position: relative;
+  width: 64px;
+  height: 50px;
+  z-index: 200;
+}
+.header .h-menu .toggler {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 10;
+  width: 64px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0;
+}
+.header .h-menu .hamburger {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.6rem;
+  width: 64px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .h-menu .hamburger > div {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #0a34a2;
+  height: 2px;
+  width: 60%;
+  background-color: #0a34a2;
+  transition: all 0.4s ease;
+}
+.header .h-menu .hamburger > div::before, .header .h-menu .hamburger > div::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  width: 100%;
+  height: 2px;
+  background: #0a34a2;
+  transition: all 0.4s ease;
+}
+.header .h-menu .hamburger > div::after {
+  top: 10px;
+}
+.header .logo {
+  width: 52px;
+  height: 52px;
+}
+.header .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*header끝*/
+.nav-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 7;
+  width: 0%;
+  height: 100vh;
+  transition: all 0.4s ease;
+}
+.nav-wrap > ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  align-items: flex-start;
+  position: fixed;
+  top: 4rem;
+  left: 24px;
+  visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+  .nav-wrap > ul {
+    top: 6rem;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .nav-wrap > ul {
+    top: 10rem;
+    padding: 0 60px;
+  }
+}
+.nav-wrap > ul > li {
+  list-style: none;
+  padding: 0.5rem;
+}
+.nav-wrap > ul > li > a {
+  position: relative;
+  color: #0a34a2;
+  text-decoration: none;
+}
+.nav-wrap > ul > li > a::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: #0a34a2;
+  transition: all 0.4s ease;
+}
+
+/*Nav List Wrap 끝*/
+/*========TOGGLE ACTIVE========*/
+.h-menu.active .hamburger > div {
+  background: rgba(0, 0, 0, 0);
+}
+.h-menu.active .hamburger > div::before {
+  top: 0;
+  transform: rotate(45deg);
+  width: 30px;
+}
+.h-menu.active .hamburger > div::after {
+  top: 0;
+  transform: rotate(135deg);
+  width: 30px;
+}
+
+.nav-wrap.active {
+  width: 100%;
+  background-color: #EFDDD1;
+}
+.nav-wrap.active > ul {
+  transition: visibility 0.4s ease;
+  transition-delay: 0.1s;
+  visibility: visible;
+}
+.nav-wrap.active > ul > li > a:hover {
+  color: #EFDDD1;
+  text-shadow: -1.4px 0 #0a34a2, 0 1.4px #0a34a2, 1.4px 0 #0a34a2, 0 -1.4px #0a34a2;
+}
+.nav-wrap.active > ul > li > a:hover::after {
+  width: 100%;
+}
+
+.title-main {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+@media screen and (min-width: 768px) {
+  .title-main {
+    font-size: 3.648vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-main {
+    font-size: 52px;
+  }
+}
+
+.title-sub {
+  font-size: 20px;
+  font-weight: 600;
+}
+@media screen and (min-width: 768px) {
+  .title-sub {
+    font-size: 2.734vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-sub {
+    font-size: 28px;
+  }
+}
+
+.title-deskTxt {
+  font-size: 17px;
+  font-weight: 600;
+}
+@media screen and (max-width: 320px) {
+  .title-deskTxt {
+    font-size: 16px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title-deskTxt {
+    font-size: 2vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-deskTxt {
+    font-size: 22px;
+  }
+}
+
+.title-txt {
+  font-size: 14px;
+  font-weight: 200;
+}
+@media screen and (max-width: 320px) {
+  .title-txt {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title-txt {
+    font-size: 1.823vw;
+  }
+}
+@media screen and (min-width: 980px) {
+  .title-txt {
+    font-size: 18px;
+  }
+}
+
+.title-small {
+  font-size: 13px;
+  font-weight: 200;
+}
+@media screen and (max-width: 320px) {
+  .title-small {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .title-small {
+    font-size: 1.448vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .title-small {
+    font-size: 14px;
+  }
+}
+
+.container .main_visual {
+  padding: 8rem 0 8rem 0;
+}
+@media screen and (min-width: 980px) {
+  .container .main_visual {
+    padding-bottom: 10rem;
+  }
+}
+.container .main_visual .inner {
+  max-width: 1400px;
+  margin: auto;
+  text-align: center;
+}
+.container .main_visual .inner .mv_title {
+  font-size: 42px;
+  margin-bottom: 1.6rem;
+  line-height: 1.2;
+  font-weight: 700;
+  color: #0a34a2;
+}
+@media screen and (min-width: 768px) {
+  .container .main_visual .inner .mv_title {
+    font-size: 5.4688vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .main_visual .inner .mv_title {
+    font-size: 76px;
+  }
+}
+.container .main_visual .inner .mv_txt {
+  font-size: 14px;
+}
+@media screen and (max-width: 320px) {
+  .container .main_visual .inner .mv_txt {
+    font-size: 13px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container .main_visual .inner .mv_txt {
+    font-size: 1.823vw;
+  }
+}
+@media screen and (min-width: 980px) {
+  .container .main_visual .inner .mv_txt {
+    font-size: 18px;
+  }
+}
+.container .main_visual .inner .visual-svg-wrap {
+  margin: 2rem auto 2.5rem auto;
+}
+@media screen and (min-width: 860px) {
+  .container .main_visual .inner .visual-svg-wrap {
+    margin-top: -2rem;
+  }
+}
+
+.section {
+  /*----section 공통스타일----*/
+  padding: 6rem 0;
+  /*-----------Work Experience 영역-----------*/
+}
+.section .inner {
+  padding: 0 24px;
+}
+@media screen and (min-width: 768px) {
+  .section .inner {
+    padding: 2rem 40px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .section .inner {
+    padding: 4rem 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section .inner {
+    margin: 0 auto;
+    padding: 6rem 60px;
+    width: 1200px;
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .section .inner {
+    width: 1400px;
+    max-width: 1400px;
+  }
+}
+.section .inner .sc-title-wrap {
+  margin-bottom: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .section .inner .sc-title-wrap {
+    margin-bottom: 6rem;
+  }
+}
+@media screen and (min-width: 980px) {
+  .section.section-work-wrap .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+}
+.section.section-work-wrap .inner .sc-title-wrap .sc-title-top {
+  margin-bottom: 2rem;
+}
+.section.section-work-wrap .inner .sc-title-wrap .sc-title-bottom {
+  display: flex;
+  align-items: center;
+  align-items: flex-end;
+}
+.section.section-work-wrap .inner .sc-title-wrap .sc-title-bottom .text-wrap .title-deskTxt {
+  font-weight: 600;
+}
+.section.section-work-wrap .inner .sc-title-wrap .sc-title-bottom .text-wrap .title-deskTxt span {
+  margin-left: 6px;
+  margin-bottom: 2px;
+  display: inline-block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #0a34a2;
+  vertical-align: text-bottom;
+}
+@media screen and (max-width: 979px) {
+  .section.section-work-wrap .inner .sc-title-wrap {
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  .section.section-work-wrap .inner .sc-title-wrap .sc-title-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section.section-work-wrap .inner .sc-title-wrap .sc-title-bottom .text-wrap .title-deskTxt {
+    text-align: center;
+    margin-bottom: 0.2rem;
+  }
+  .section.section-work-wrap .inner .sc-title-wrap .sc-title-bottom .text-wrap .title-txt {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 980px) {
+  .section.section-work-wrap .inner .sc-conts-wrap {
+    width: 50%;
+    transition-delay: 0.4s;
+  }
+}
+.section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list {
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid #0a34a2;
+  margin-bottom: 2rem;
+}
+.section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .work-title {
+  margin-bottom: 1.4rem;
+}
+.section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .menu .list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.4rem;
+  align-items: baseline;
+}
+@media screen and (min-width: 980px) {
+  .section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .menu .list {
+    margin-bottom: 0.6rem;
+  }
+}
+.section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .menu .list .name > p:nth-child(1) {
+  font-size: 14px;
+  font-weight: 500;
+}
+.section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .menu .list .name > p:nth-child(2) {
+  font-size: 13px;
+  font-weight: 300;
+}
+@media screen and (min-width: 980px) {
+  .section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .menu .list .name {
+    display: flex;
+    align-items: center;
+  }
+  .section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .menu .list .name > p:nth-child(2) {
+    margin-left: 0.4rem;
+  }
+}
+.section.section-work-wrap .inner .sc-conts-wrap .work-list-wrap .work-list .menu .list .date {
+  font-size: 13px;
+  font-weight: 500;
+}/*# sourceMappingURL=index.css.map */
