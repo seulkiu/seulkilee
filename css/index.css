@@ -388,7 +388,7 @@ button {
   flex-direction: column;
   align-items: flex-start;
   position: fixed;
-  top: 4rem;
+  top: 6rem;
   left: 24px;
   visibility: hidden;
 }
@@ -446,13 +446,9 @@ button {
   background-color: #EFDDD1;
 }
 .nav-wrap.active > ul {
-  transition: visibility 0.4s ease;
-  transition-delay: 0.1s;
+  transition: visibility 0.5s ease-in-out;
+  transition-delay: 0.2s;
   visibility: visible;
-}
-.nav-wrap.active > ul > li > a:hover {
-  color: #EFDDD1;
-  text-shadow: -1.4px 0 #2538AD, 0 1.4px #2538AD, 1.4px 0 #2538AD, 0 -1.4px #2538AD;
 }
 .nav-wrap.active > ul > li > a:hover::after {
   width: 100%;
