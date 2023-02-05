@@ -150,7 +150,7 @@
                 }
                 .work-list-wrap{
                     .work-list{
-                        padding-bottom: 1.4rem; border-bottom: 1px solid $color-main;
+                        padding-bottom: 1.4rem; border-bottom: 1px solid rgba(37,56,173,0.2);
                         margin-bottom: 2rem;
                         &:last-child{ border-bottom: 0px;}
                         .work-title{margin-bottom:1.4rem;}
@@ -236,7 +236,17 @@
                         position: relative;
                         @include flex-between; align-items: flex-end;
                         margin-bottom: 1.2rem; padding-bottom: 0.4rem;
-                        &::after{content: ""; clear: both; display: block; position: absolute; bottom:0; left:0; width: 100%; height: 1px; background-color: $color-main; transition: all 0.5s ease;}
+                        &::after{content: ""; clear: both; display: block; position: absolute; bottom:0; left:0; width: 100%; height: 2px; background-color: $color-main; transition: all 0.5s ease;}
+                        .icon{width: 54px; height: 54px; background-repeat: no-repeat; background-position: 100% auto; background-color: $color-main;}
+                    }
+                    .sk-info{
+                        .info-list{
+                            margin-bottom: 0.8rem;
+                            li{@include font-basic; font-weight: 600; margin-bottom: 0.25rem;}
+                        }
+                        .info-menu{
+                            font-weight: 300;
+                        }
                     }
                 }
             }
