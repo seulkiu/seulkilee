@@ -44,7 +44,7 @@
     transition: all 0.4s ease;
     & > ul{ 
         @include flex-column; align-items: flex-start;
-        position: fixed; top: 4rem; left: 24px; visibility: hidden;
+        position: fixed; top: 6rem; left: 24px; visibility: hidden;
         @media screen and(min-width:768px) { top: 6rem; padding: 0 40px;}
         @media screen and(min-width:1200px) { top: 10rem; padding: 0 60px;}
         & > li{
@@ -70,14 +70,13 @@
 .nav-wrap.active{
     width: 100%; background-color: $color-bg;
     &>ul{
-        transition: visibility 0.4s ease; transition-delay: 0.1s; visibility: visible;
+        transition: visibility 0.5s ease-in-out; transition-delay: 0.2s; visibility: visible;
         &>li>a:hover{
-            color: $color-bg;
-            text-shadow: -1.4px 0 $color-point, 0 1.4px $color-point, 1.4px 0 $color-point, 0 -1.4px $color-point;
             &::after{width: 100%;}
         }
     }
 }
+
 
 .title-main{@include font-title; font-weight: 700; line-height: 1.3;}
 .title-sub{@include font-subTitle; font-weight: 600;}
