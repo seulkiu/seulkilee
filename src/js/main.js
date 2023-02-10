@@ -29,10 +29,10 @@
 //==========================Scroll Event===========================//
 
 function isElementUnderBottom(elem, triggerDiff) {
-    const { top } = elem.getBoundingClientReac();
+    const { top } = elem.getBoundingClientRect();
     const { innerHeight } = window;
-    return top > innerHeight + (triggerDiff || 0);
-} // 높이값 확인
+    return top > innerHeight + (triggerDiff || 0); 
+}
 
 function handleScroll() {
     
@@ -42,7 +42,7 @@ function handleScroll() {
         if (isElementUnderBottom(elem, -20)) {
             elem.style.opacity = "0";
             elem.style.transform = 'translateY(70px)';
-            elem.style.transitioinDuration = '.4s'
+            elem.style.transitioinDuration = '.5s'
         } else {
             elem.style.opacity = "1";
             elem.style.transform = 'translateY(0px)';
@@ -53,34 +53,4 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 // Scroll Event 끝
-
- // =================== JQuery --- Text Scroll Event================== //
-  //get in touch button
-
-//on hover text transform scale
-$(document).ready(function(){
-    $('.fs-parallex-effect').each(function(){
-        var splitText =  $(this).find('.parallex-title').text();      
-        //  console.log(splitText);
-
-        for (var i = 0; i < splitText.length; i++) {
-            $(this).find('.parallex-title').append('<span class="letter"><span>'+splitText.charAt(i)+'</span></span>');
-        }
-
-        // $('.parallex-title .letter').each(function(){
-        //     var letterVal = $(this).text();
-        //     if(letterVal == " "){
-        //         $(this).addClass('space');
-        //     }
-        // });
-
-        // var letterLength = $('.parallex-title').children('.letter').length;        
-        // var transitionTime = (0.3)/(letterLength);
-
-        // for(k = 1; k <= letterLength; k++){
-        //     $('.letter:nth-child('+k+')').css('animation-duration',transitionTime+'s');
-        //     transitionTime = transitionTime + 0.04;
-        // }
-    });
-});
 
