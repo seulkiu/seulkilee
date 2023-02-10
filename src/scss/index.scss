@@ -8,6 +8,7 @@
     overflow: hidden;
 }
 .header{
+    // background-color: $color-bg;
     @include flex-between;
     position: fixed; top: 0; left:0; right:0; z-index:100; padding: 0 24px; height: 4rem;
     @media screen and (min-width:768px) {margin-bottom:3.2rem; padding:0 40px;}
@@ -42,7 +43,7 @@
 
 .nav-wrap{
     position: fixed; top: 0; left: 0; z-index: 7; width: 0%; height: 100vh;
-    transition: all 0.4s ease;
+    transition: all 0.4s ease; 
     & > ul{ 
         @include flex-column; align-items: flex-start;
         position: fixed; top: 6rem; left: 24px; visibility: hidden;
@@ -118,18 +119,22 @@
             @media screen and (min-width:768px){margin-bottom:6rem;}
         }
     }
-    /*-----------Work Experience 영역-----------*/
+    /*-----------ABOUNT & Work Experience 영역-----------*/
     &.section-work-wrap{
         .inner{
             @media screen and (min-width:980px) {
                 @include flex-between; align-items: baseline;
             }
             .sc-title-wrap{
-                .sc-title-top{margin-bottom:2rem;}
+                .sc-title-top{
+                    margin-bottom:2rem;
+                    .lighter{font-weight: 300;}
+                }
                 .sc-title-bottom{
                     @include flex; align-items: flex-end;
                     .text-wrap{
                         .title-deskTxt{font-weight: 600;}
+                        
                     }
                 }
                 @media screen and (max-width:979px) {
@@ -234,15 +239,22 @@
                     margin-bottom: 3.5rem;
                     .sk-title{
                         position: relative;
-                        @include flex-between; align-items: flex-end;
+                        @include flex; align-items: flex-end;
                         margin-bottom: 1.2rem; padding-bottom: 0.4rem;
                         &::after{content: ""; clear: both; display: block; position: absolute; bottom:0; left:0; width: 100%; height: 2px; background-color: $color-main; transition: all 0.5s ease;}
-                        .icon{width: 54px; height: 54px; background-repeat: no-repeat; background-position: 100% auto; background-color: $color-main;}
+                        .icon{width: 48px; height: 48px; background-repeat: no-repeat; background-position: 100% auto; background-color: $color-main; margin-right: 0.4rem;}
                     }
                     .sk-info{
                         .info-list{
                             margin-bottom: 0.8rem;
-                            li{@include font-basic; font-weight: 600; margin-bottom: 0.25rem;}
+                            .list-detail{
+                                @include flex-between; margin-bottom: 0.25rem;
+                                p{
+                                    @include font-basic; font-weight: 600; 
+                                }
+                                
+                            }
+                            // li{@include font-basic; font-weight: 600; margin-bottom: 0.25rem;}
                         }
                         .info-menu{
                             font-weight: 300;
@@ -260,7 +272,7 @@
 
 
 .footer{
-    padding: 3rem 0;
+    padding: 4rem 0;
     background-color: $color-main;
     .inner{
         padding: 0 24px;
@@ -268,34 +280,45 @@
         @media screen and (min-width:1200px) { margin: 0 auto; padding: 2rem 60px; width: 1200px; max-width: 1200px;}
         @media screen and (min-width:1400px) { width: 1400px; max-width: 1400px;}
         .f-title{
-            margin-bottom: 2.6rem; color: $color-white;
+            margin-bottom: 2.6rem; color: $color-white; 
         }
         .f-conts{
-            h3{color: $color-white;}
-            p{ margin-bottom: 2rem; color: $color-white; font-weight: 300; opacity: .8;}
-            .sns-lists{
-                @include flex; margin-top: 1rem;
-                li{
-                    margin-right: 20px; width: 48px; height: 48px; border-radius: 8px;
-                    a{
-                        display: block; width: 100%; height: 100%; @include flex-center; 
-                        img{width: 80%;}
+            flex-direction: column;
+            .f-info{
+                padding-bottom: 2rem;
+                .f-info-list{ padding-bottom: 1.2rem;}
+                h3{ color: $color-white; display: inline-block; padding-right: 0.6rem;}
+                p{ color: $color-white; font-weight: 300; opacity: 0.8; display: inline-block; }
+            }
+            .f-others{
+                border-top: 1px solid rgba(255, 255, 255, 0.1); padding-top: 2rem;
+                .sns-lists{
+                    @include flex; margin-top: 1rem;
+                    li{
+                        padding-right: 1.6rem; border-radius: 8px;
+                        a{
+                            display: inline-block; width: 100%; height: 100%; @include flex-center; 
+                            .fa { color: #fff; vertical-align: middle;}
+                        }
                     }
-                    @media screen and (min-width:980px) {width: 52px; height: 52px;}
-                    @media screen and (min-width:1200px) {width: 56px; height: 56px;}
+                }
+                @media screen and (min-width:768px) {
+                    @include flex; align-items: flex-stat; justify-content: center;
                 }
             }
+            }
+            
+        .copyright{ 
+            padding-top:2rem; color: $color-white; font-weight: 300; opacity: 0.5;
             @media screen and (min-width:768px) {
-                @include flex; align-items: flex-start;
-                .f-others{ margin-left: 38%;}
+                @include flex; align-items: flex-start; justify-content: center;
             }
         }
-        .copyright{ margin-top: 4rem; color: $color-white; font-weight: 300; opacity: .5;}
     }
 }
-.modal-wrap{
-    position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-    display: flex; justify-content: center; align-items: center;
-    width: 400px; max-width: 80%; height: 200px; max-height: 50%;
-    background-color: $color-white; border-radius: 1.4rem; box-shadow: 0 4px 20px rgba(0,0,0,.1);
-}
+// .modal-wrap{
+//     position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+//     display: flex; justify-content: center; align-items: center;
+//     width: 400px; max-width: 80%; height: 200px; max-height: 50%;
+//     background-color: $color-white; border-radius: 1.4rem; box-shadow: 0 4px 20px rgba(0,0,0,.1);
+// }
