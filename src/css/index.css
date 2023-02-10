@@ -380,7 +380,7 @@ button {
   z-index: 7;
   width: 0%;
   height: 100vh;
-  transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
+  transition: all 0.6s ease;
 }
 .nav-wrap > ul {
   display: flex;
@@ -427,6 +427,9 @@ button {
 
 /*Nav List Wrap 끝*/
 /*========TOGGLE ACTIVE========*/
+.h-menu.active .hamburger > div {
+  background: rgba(0, 0, 0, 0);
+}
 .h-menu.active .hamburger > div::before {
   top: 0;
   transform: rotate(45deg);
@@ -443,8 +446,8 @@ button {
   background-color: #EFDDD1;
 }
 .nav-wrap.active > ul {
-  transition: visibility 0.4s ease-in-out;
-  transition-delay: 0.2s;
+  transition: visibility 0.4s ease;
+  transition-delay: 0.1s;
   visibility: visible;
 }
 .nav-wrap.active > ul > li > a:hover::after {

@@ -26,6 +26,7 @@
     
 })();
 
+
 //==========================Scroll Event===========================//
 
 function isElementUnderBottom(elem, triggerDiff) {
