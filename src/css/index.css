@@ -380,7 +380,7 @@ button {
   z-index: 7;
   width: 0%;
   height: 100vh;
-  transition: all 0.4s ease;
+  transition: all 800ms cubic-bezier(0.8, 0, 0.33, 1);
 }
 .nav-wrap > ul {
   display: flex;
@@ -427,9 +427,6 @@ button {
 
 /*Nav List Wrap 끝*/
 /*========TOGGLE ACTIVE========*/
-.h-menu.active .hamburger > div {
-  background: rgba(0, 0, 0, 0);
-}
 .h-menu.active .hamburger > div::before {
   top: 0;
   transform: rotate(45deg);
@@ -446,7 +443,7 @@ button {
   background-color: #EFDDD1;
 }
 .nav-wrap.active > ul {
-  transition: visibility 0.5s ease-in-out;
+  transition: visibility 0.4s ease-in-out;
   transition-delay: 0.2s;
   visibility: visible;
 }
@@ -799,7 +796,7 @@ button {
   font-weight: 600;
 }
 .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-title-wrap .black {
-  color: #484848;
+  color: #2538AD;
 }
 .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-detail-wrap {
   opacity: 0;
@@ -819,8 +816,7 @@ button {
   color: #ffffff;
 }
 .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list a .p-detail-wrap .button-view {
-  width: 140px;
-  opacity: 0.9;
+  width: 46px;
 }
 .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list:hover .p-detail-wrap {
   transition: opacity 450ms ease-in-out;
