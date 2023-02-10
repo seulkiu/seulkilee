@@ -65,7 +65,6 @@
 
 /*========TOGGLE ACTIVE========*/
 .h-menu.active .hamburger > div {
-    background: rgba(0,0,0,0);
     &::before{top:0; transform: rotate(45deg); width: 30px;}
     &::after{top:0; transform: rotate(135deg); width: 30px;}
 }
