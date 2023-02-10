@@ -155,7 +155,7 @@
                 }
                 .work-list-wrap{
                     .work-list{
-                        padding-bottom: 1.4rem; border-bottom: 1px solid rgba(37,56,173,0.2);
+                        padding-bottom: 1.4rem; border-bottom: 1px solid rgba(37,56,173,0.1);
                         margin-bottom: 2rem;
                         &:last-child{ border-bottom: 0px;}
                         .work-title{margin-bottom:1.4rem;}
@@ -189,21 +189,19 @@
                 .portfolio-list-wrap{
                     @media screen and (min-width:768px) { @include flex-between; flex-wrap: wrap; }
                     .portfolio-list{
-                        margin-bottom: 2rem;  position: relative; box-sizing: border-box; border: 1px solid rgb(244, 244, 244);
-                        &:before { content: ""; display: block; padding-top: 100%; /* 1:1 비율 */}
-                        
+                        margin-bottom: 6rem;
+
                         @media screen and (min-width:768px) {
                             width: 49%; margin-bottom: 1.2rem;
                             &:nth-child(2n+0){transition-delay: 0.2s;}
-                            }
-                        a{
-                            position: absolute; top: 0; bottom: 0; left: 0; right: 0; display: block; width: 100%; height: 100%;
-                            .p-bg-wrap{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
-                            .p-title-wrap{
-                                position: absolute; bottom: 2rem; left: 2rem;
-                                .label{color:$color-white;}
-                                .project-name{color: $color-white; font-weight: 600;}
-                                .black{color: $color-main;}
+                        }
+                        .p-list-box{
+                            position: relative; box-sizing: border-box; border:1px solid rgb(227, 227, 227);
+                            &::before{content: ""; display: block; padding-top: 100%;}
+                            
+                            a{
+                                position: absolute; top: 0; bottom: 0; left: 0; right: 0; display: block; width: 100%; height: 100%;
+                                .p-bg-wrap{ position: absolute; top: 0; bottom: 0; left: 0; right: 0; }
                             }
                             .p-detail-wrap{
                                 opacity: 0;
@@ -214,8 +212,17 @@
                                 p{color: $color-white;}
                                 .button-view{width: 46px;}
                             }
+                            &:hover .p-detail-wrap{ transition: opacity 450ms ease-in-out; opacity:1;}   
+                    }
+                    .p-title-wrap{
+                        padding-top: 0.1rem;
+                        margin-bottom: 2rem;
+                        .project-name{display: inline-block;
+                            &::after {content: "\22C5"; display: inline-block; padding: 0.3rem;}
                         }
-                        &:hover .p-detail-wrap{ transition: opacity 450ms ease-in-out; opacity:1;}                       
+                        .label {display: inline-block;}
+                        .black{color: $color-middle-black;}
+                        }
                     }
                 }
             }
@@ -263,8 +270,7 @@
                 }
             }
         }
-    }
-    
+    } 
 }
 
 
@@ -316,9 +322,3 @@
         }
     }
 }
-// .modal-wrap{
-//     position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
-//     display: flex; justify-content: center; align-items: center;
-//     width: 400px; max-width: 80%; height: 200px; max-height: 50%;
-//     background-color: $color-white; border-radius: 1.4rem; box-shadow: 0 4px 20px rgba(0,0,0,.1);
-// }
