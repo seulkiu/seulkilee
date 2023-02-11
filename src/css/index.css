@@ -750,12 +750,12 @@ button {
   }
 }
 .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list {
-  margin-bottom: 6rem;
+  margin-bottom: 3rem;
 }
 @media screen and (min-width: 768px) {
   .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list {
     width: 49%;
-    margin-bottom: 1.2rem;
+    margin-bottom: 3rem;
   }
   .section.section-portfolio-wrap .inner .sc-conts-wrap .portfolio-list-wrap .portfolio-list:nth-child(2n+0) {
     transition-delay: 0.2s;

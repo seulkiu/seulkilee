@@ -189,10 +189,10 @@
                 .portfolio-list-wrap{
                     @media screen and (min-width:768px) { @include flex-between; flex-wrap: wrap; }
                     .portfolio-list{
-                        margin-bottom: 6rem;
+                        margin-bottom: 3rem;
 
                         @media screen and (min-width:768px) {
-                            width: 49%; margin-bottom: 1.2rem;
+                            width: 49%; margin-bottom: 3rem;
                             &:nth-child(2n+0){transition-delay: 0.2s;}
                         }
                         .p-list-box{
