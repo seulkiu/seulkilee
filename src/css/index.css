@@ -567,12 +567,12 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container .main_visual .inner .mv_title {
-    font-size: 5.4688vw;
+    font-size: 6vw;
   }
 }
 @media screen and (min-width: 1200px) {
   .container .main_visual .inner .mv_title {
-    font-size: 76px;
+    font-size: 90px;
   }
 }
 .container .main_visual .inner .mv_txt {
