@@ -1,0 +1,306 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>포레스트</title>
+
+    <link href="../css/sub.css" type="text/css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-theme.css">
+    <style>
+        .slick-slide img {
+            max-width: 100%;
+            transition: transform 0.5s;
+        }
+
+        .slick-slide.slick-center img {
+            transform: scale(1.5);
+            overflow: visible;
+        }
+    </style>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".md_product").slick({
+                dots: true,
+                autoplay: true,
+                centerMode: true,
+                focusOnSelect: true,
+                slidesToShow: 7,
+            });
+        });
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script src="../js/common.js"></script>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_inner">
+            <h1 class="logo"><a href="../index.html"><img src="../images/common/logo.png" alt="포레스트"></a></h1>
+            <ul id="gnb">
+                <li><a href="product.html">PRODUCT</a>
+                    <ul class="dp2">
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">BATH &amp; BODY</a></li>
+                        <li><a href="#">SKIN CARE</a></li>
+                        <li><a href="#">SALE</a></li>
+                    </ul>
+                </li>
+                <li><a href="brand.html">BRAND</a>
+                    <ul class="dp2">
+                        <li><a href="brand.html">IDENTITY</a></li>
+                        <li><a href="#">ARTICLE</a></li>
+                    </ul>
+                </li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="event.html">EVENT</a></li>
+
+            </ul>
+
+            <ul class="utill">
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="cs.html"><img src="../images/common/button_cs.png" alt="고객센터"></a></li>
+                <li class="btn_search"><a href="saerch.html"><img src="../images/common/button_search.png" alt="검색"></a></li>
+            </ul>
+        </div>
+        <!--//header_inner-->
+    </header>
+
+ <div id="store_history">
+    <ul>
+        <li><a href="../index.html"><img src="../images/sub/icon_home.png" alt="home" width="12px" height="12px">Home</a></li>
+        <li><a href="brand.html">Store</a></li>
+        </ul></div>
+
+    <div id="sub_contents" class="bg_store">
+        <section id="sub_visual">
+            <h2>STORE&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+        </section>
+
+
+        <div id="store_inner">
+            <form name="search" class="search">
+                <select name="address" id="storeAddr">
+                    <option value="" disabled selected>전국</option>
+                    <option value="서울">서울</option>
+                    <option value="경기/인천">경기/인천</option>
+                    <option value="충청/세종/대전">충청/세종/대전</option>
+                    <option value="경상/대구/부산">경상/대구/부산</option>
+                    <option value="전라/광주">전라/광주</option>
+                    <option value="제주">제주</option>
+                </select>
+
+                <input type="text" placeholder="매장명을 입력하세요">
+                <input type="submit" value="검색" style="cursor:pointer">
+
+
+            </form>
+        </div>
+        <!--검색창-->
+
+
+
+        <div class="shop_list">
+            <div class="wrap_one">
+                <div>
+                    <ul>
+                        <li>
+                            <div class="shop_info">
+                                <div class="shop_info_img">
+                                    <img src="../images/sub/store1.jpg" alt="부산 전포점">
+                                </div>
+                                <div class="shop_info_text">
+                                    <div>
+                                        <h4>부산 전포점</h4>
+                                        <ul class="noto">
+                                            <li>
+                                                <img src="../images/sub/icon_spot.png" alt>
+                                                <p>부산 부산진구 서전로38번길 76</p>
+
+                                            </li>
+                                            <li>
+                                                <img src="../images/sub/icon_time.png" alt>
+                                                <p>09:00 ~ 23:00</p>
+
+                                            </li>
+                                            <li>
+                                                <img src="../images/sub/icon_phone.png" alt>
+                                                <p>051-807-5565</p>
+
+                                            </li>
+                                            <li>
+                                                <img src="../images/sub/icon_delivery.png" alt>
+                                                <p>배달가능</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="shop_info_btn">
+                                    <div><a href="#" target="_blank" class="map">지도보기 &rarr;</a></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="shop_info">
+                                <div class="shop_info_img">
+                                    <img src="../images/sub/store2.jpg" alt="동래점">
+                                </div>
+                                <div class="shop_info_text">
+                                    <div>
+                                        <h4>동래점</h4>
+                                        <ul class="noto">
+                                            <li>
+                                                <img src="../images/sub/icon_spot.png" alt>
+                                                <p>부산 동래구 온천2동 충렬대로 101</p>
+
+                                            </li>
+                                            <li>
+                                                <img src="../images/sub/icon_time.png" alt>
+                                                <p>09:00 ~ 23:00</p>
+
+                                            </li>
+                                            <li>
+                                                <img src="../images/sub/icon_phone.png" alt>
+                                                <p>051-807-5565</p>
+
+                                            </li>
+                                            <li>
+                                                <img src="../images/sub/icon_delivery.png" alt>
+                                                <p>배달가능</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="shop_info_btn">
+                                    <div><a href="#" target="_blank" class="map">지도보기 &rarr;</a></div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li>
+                            <div class="shop_info">
+                                <div class="shop_info_img">
+                                    <img src="../images/sub/store3.jpg" alt="해운대점">
+                                </div>
+                                <div class="shop_info_text">
+                                    <div>
+                                        <h4>해운대점</h4>
+                                        <ul class="noto">
+                                            <li>
+                                                <img src="../images/sub/icon_spot.png" alt>
+                                                <p>부산 해운대구 중동 구남로 49</p>
+
+                                            </li>
+                                            <li>
+                                                <img src="../images/sub/icon_time.png" alt>
+                                                <p>09:00 ~ 23:00</p>
+
+                                            </li>
+                                            <li>
+                                                <img src="../images/sub/icon_phone.png" alt>
+                                                <p>051-807-5565</p>
+
+                                            </li>
+                                            <li>
+                                                <img src="../images/sub/icon_delivery.png" alt>
+                                                <p>배달불가</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+
+                                <div class="shop_info_btn">
+                                    <div><a href="#" target="_blank" class="map">지도보기 &rarr;</a></div>
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+            <!--wrap_one끝-->
+
+
+
+        </div>
+        <!--//sub_contents-->
+    </div>
+    <!--shop_list-->
+
+
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="footer_inner">
+            <h3 class="footer_logo"><img src="../images/common/footer_logo.png" alt="포레스트 푸터 로고"></h3>
+            <div class="cs">
+                <p>고객센터<br>
+                    1699-8912<br>
+                    09:00 ~ 18:00<br>
+                    forest@forest.com</p>
+            </div>
+
+            <ul class="sns">
+                <li><a href="#"><img src="../images/common/footer_button_insta.png" alt="인스타그램"></a></li>
+                <li><a href="#"><img src="../images/common/footer_button_youtube.png" alt="유튜브"></a></li>
+                <li><a href="#"><img src="../images/common/footer_button_facebook.png" alt="페이스북"></a></li>
+            </ul>
+
+
+            <ul class="link">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">입사지원</a></li>
+            </ul>
+
+            <div class="subscribe">
+                <p>가장 빠르게 FOREST의 소식을 만나는 법!<br>
+                    지금 뉴스레터를 구독하세요.<br>
+                    언제든지 구독 해지하실 수 있습니다.</p>
+            </div>
+
+            <form>
+                <input type="text"><input type="submit" value="구독하기" style="cursor:pointer">
+            </form>
+
+            <div class="copyright">
+                <p>부산광역시 부산진구 중앙대로 708 부산파이낸스센터 4층 &#124; CEO : 이슬기<br>
+                    사업자 등록번호 : 207-89-5579241 &#124; 통신판매업 신고번호 : 2012-7895-5779 &#124; 개인정보보호책임자 : 이슬기<br>
+                    <span>CopyrightⓒFORESTco.Ltd.All right reserved.</span></p>
+            </div>
+        </div>
+        <!--footer_inner-->
+
+    </footer>
+    <a href="#" class="go_top">TOP</a>
+</body>
+
+</html>

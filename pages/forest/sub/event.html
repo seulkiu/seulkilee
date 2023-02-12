@@ -1,0 +1,241 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>포레스트</title>
+
+    <link href="../css/sub.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" type="text/css" href="slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-theme.css">
+    <style>
+        .slick-slide img {
+            max-width: 100%;
+            transition: transform 0.5s;
+        }
+
+        .slick-slide.slick-center img {
+            transform: scale(1.5);
+            overflow: visible;
+        }
+
+    </style>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script type="text/javascript" src="slick.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".md_product").slick({
+                dots: true,
+                autoplay: true,
+                centerMode: true,
+                focusOnSelect: true,
+                slidesToShow: 7,
+            });
+        });
+
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+    <script src="../js/common.js"></script>
+
+
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_inner">
+            <h1 class="logo"><a href="../index.html"><img src="../images/common/logo.png" alt="포레스트"></a></h1>
+            <ul id="gnb">
+                <li><a href="product.html">PRODUCT</a>
+                    <ul class="dp2">
+                        <li><a href="#">BEST</a></li>
+                        <li><a href="#">NEW</a></li>
+                        <li><a href="#">BATH &amp; BODY</a></li>
+                        <li><a href="#">SKIN CARE</a></li>
+                        <li><a href="#">SALE</a></li>
+                    </ul>
+                </li>
+                <li><a href="brand.html">BRAND</a>
+                    <ul class="dp2">
+                        <li><a href="brand.html">IDENTITY</a></li>
+                        <li><a href="#">ARTICLE</a></li>
+                    </ul>
+                </li>
+                <li><a href="store.html">STORE</a></li>
+                <li><a href="event.html">EVENT</a></li>
+
+            </ul>
+
+            <ul class="utill">
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="join.html">JOIN</a></li>
+                <li><a href="cs.html"><img src="../images/common/button_cs.png" alt="고객센터"></a></li>
+                <li class="btn_search"><a href="saerch.html"><img src="../images/common/button_search.png" alt="검색"></a></li>
+            </ul>
+        </div>
+        <!--//header_inner-->
+    </header>
+
+    <div id="event_history">
+        <ul>
+            <li><a href="../index.html"><img src="../images/sub/icon_home.png" alt="home" width="12px" height="12px">Home</a></li>
+            <li><a href="brand.html">Event</a></li>
+        </ul>
+    </div>
+
+    <div id="sub_contents" class="bg_event">
+        <section id="event_visual">
+           <ul class="banner_event">
+                <li class="bn1"><a href="#">
+                    <p class="bn_txt1">출석체크 완료하고 <span>신제품</span> 구매 쿠폰 받아가세요!</p>
+                    <p class="bn_txt2">9월 출석체크 이벤트</p>
+                    <p class="bn_txt3">2020.09.01 ~ 2020.09.30</p></a>
+               </li>
+                <li class="bn2"><a href="#"><p class="bn_txt1"><span>풍성한 한가위</span>를 준비하세요!</p>
+                    <p class="bn_txt2">추석맞이 선물 기획전</p>
+                    <p class="bn_txt3">2020.09.01 ~ 2020.09.30</p></a></li>
+            </ul>
+        </section>
+
+        <section id="event">
+            <h3>event</h3>
+            <ul id="event_list">
+                <li> 
+                    <a href="#">
+                        <div class="img"><img src="../images/sub/img_event1.png"></div>
+                <div class="ev_text">
+                    <p class="tit">베스트 리뷰어 이벤트</p>
+                    <p class="desc">상세한 포레스트 제품 사용 후기를 남겨주세요!<br>
+                    가장 우수한 후기를 작성해주신 분께 선물을 드려요.</p>
+                    </div></a>
+                </li>
+                
+                <li>
+                    <a href="#">
+                         <div class="img"><img src="../images/sub/img_event2.png"></div>
+                <div class="ev_text">
+                    <p class="tit">추석맞이 선물 기획전</p>
+                    <p class="desc">미리 준비하는 한가위!<br>추석맞이 선물 기획전으로 풍성한 한가위를 준비하세요.</p>
+                    </div></a>
+                </li>
+                
+                <li>
+                <a href="#">
+                  <div class="img"><img src="../images/sub/img_event3.jpg"></div>
+                    <div class="ev_text">
+                    <p class="tit">9월 출석체크</p>
+                        <p class="desc">바람이 쌀쌀해지는 초가을 9월<br>출석한 횟수에 따라 온라인 전용 할인쿠폰을 드립니다.</p>
+                    </div>
+                    </a>
+                </li>
+                
+                <li>
+                <a href="#">
+                   <div class="img"><img src="../images/sub/img_event4.png"></div>
+                    <div class="ev_text">
+                    <p class="tit">채식 챌린지</p>
+                        <p class="desc">여러분에게 맞는 채식을 선택해보세요!<br>100%달성시 포레스트 텀블러를 드립니다.</p>
+                    </div>
+                    </a>
+                </li>
+                
+                 <li>
+                <a href="#">
+                   <div class="img"><img src="../images/sub/img_event5.png"></div>
+                    <div class="ev_text">
+                    <p class="tit">포레스트 에코 캠페인</p>
+                        <p class="desc">종료된 이벤트입니다.</p>
+                    </div>
+                    </a>
+                </li>
+                
+                 <li>
+                <a href="#">
+                   <div class="img"><img src="../images/sub/img_event6.png"></div>
+                    <div class="ev_text">
+                    <p class="tit">Cool Summer FOREST</p>
+                        <p class="desc">종료된 이벤트입니다.</p>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+            
+            
+    <ul class="paging">
+        <li><a href="#">처음페이지로</a></li>
+        <li><a href="#">이전페이지로</a></li>
+        <li class="on"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">다음페이지로</a></li>
+        <li><a href="#">마지막페이지로</a></li>
+    
+    </ul>
+        </section>
+    </div>
+
+
+   
+
+
+
+
+
+    <footer id="footer">
+        <div class="footer_inner">
+            <h3 class="footer_logo"><img src="../images/common/footer_logo.png" alt="포레스트 푸터 로고"></h3>
+            <div class="cs">
+                <p>고객센터<br>
+                    1699-8912<br>
+                    09:00 ~ 18:00<br>
+                    forest@forest.com</p>
+            </div>
+
+            <ul class="sns">
+                <li><a href="#"><img src="../images/common/footer_button_insta.png" alt="인스타그램"></a></li>
+                <li><a href="#"><img src="../images/common/footer_button_youtube.png" alt="유튜브"></a></li>
+                <li><a href="#"><img src="../images/common/footer_button_facebook.png" alt="페이스북"></a></li>
+            </ul>
+
+
+            <ul class="link">
+                <li><a href="#">회사소개</a></li>
+                <li><a href="#">개인정보처리방침</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#">고객센터</a></li>
+                <li><a href="#">입사지원</a></li>
+            </ul>
+
+            <div class="subscribe">
+                <p>가장 빠르게 FOREST의 소식을 만나는 법!<br>
+                    지금 뉴스레터를 구독하세요.<br>
+                    언제든지 구독 해지하실 수 있습니다.</p>
+            </div>
+
+            <form>
+                <input type="text"><input type="submit" value="구독하기" style="cursor:pointer">
+            </form>
+
+            <div class="copyright">
+                <p>부산광역시 부산진구 중앙대로 708 부산파이낸스센터 4층 &#124; CEO : 이슬기<br>
+                    사업자 등록번호 : 207-89-5579241 &#124; 통신판매업 신고번호 : 2012-7895-5779 &#124; 개인정보보호책임자 : 이슬기<br>
+                    <span>CopyrightⓒFORESTco.Ltd.All right reserved.</span></p>
+            </div>
+        </div>
+        <!--footer_inner-->
+
+    </footer>
+    <a href="#" class="go_top">TOP</a>
+</body>
+
+</html>
