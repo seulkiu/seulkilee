@@ -18,7 +18,7 @@ input {vertical-align:middle;}
 
 
 /* 기본 설정 */
-body {font-family: 'Montserrat', 'Noto Sans KR', 'Roboto', sans-serif; font-size: 16px; line-height: 26px; color: #000; padding-top: 130px;}
+body {font-family: 'Montserrat', 'Noto Sans KR', 'Roboto', sans-serif; font-size: 16px; line-height: 26px; color: #000; padding-top: 130px; margin: 0 auto;}
 
 
 /*  HEADER */
@@ -274,7 +274,7 @@ body {font-family: 'Montserrat', 'Noto Sans KR', 'Roboto', sans-serif; font-size
 
 
 /* FOOTER */
-#footer {height: 500px; background: #000;}
+#footer {height: 500px; background: #000; overflow: auto;}
 #footer .footer_inner {width: 1200px; height: 100%; margin: 0 auto; position: relative; color: #fff;}
 #footer .footer_inner .footer_logo {position: absolute; left: 0; top: 100px;}
 #footer .footer_inner .cs {font-size: 14px; font-family: 'Noto Sans KR'; position: absolute; left:0; top:180px; line-height: 30px;}
