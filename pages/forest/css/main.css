@@ -133,9 +133,11 @@ body {
   position: relative;
   margin-bottom: 200px;
 }
+.wrap .main_visual .visual li {text-indent: -9999px; height: 600px;}
 .wrap .main_visual .visual .mv1 {
-  height: 600px;
+  background: url(../images/main/main_banner1.png) no-repeat center top;
 }
+.wrap .main_visual .visual .mv2{background: url(../images/main/main_banner2.png) no-repeat center top;}
 .wrap .main_visual .bx-wrapper .bx-prev {
   opacity: 0.5;
   left: 10%;
