@@ -1,0 +1,36 @@
+@charset "utf-8";
+
+
+
+/* 초기화 요소 */
+*{ margin: 0; padding: 0;}
+
+ol,ul {list-style: none;}
+
+a:link,a:visited,a:hover,a:active {text-decoration: none; color: #000;}
+
+body {font-family: 'Noto Sans KR'; font-size: 16px; line-height: 26px; color: #000;}
+
+
+/* */
+
+.view a {display: none;}
+
+
+.btn_close {display:block; width: 5vw; position: fixed; top:1vw; right: 1vw; min-height: 5vw; box-sizing: border-box; transition: all 0.3s; z-index: 999;}
+.btn_close:hover {opacity: 0.3;}
+.btn_close a img {width: 100%;}
+
+#styleguide { 
+    max-width:1920px; height:0; position: relative;  
+    padding-bottom: calc(5400/842*100%);
+    background: url('../images/bi_helsi.png') rgba(18,89,145,0.4);
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#styleguide .btn_back a {display: none;}
+#styleguide .btn_back a:hover {background: rgba(63,63,63,0.8);}
+
+

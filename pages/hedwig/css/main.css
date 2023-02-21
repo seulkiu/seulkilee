@@ -1,0 +1,444 @@
+@charset "utf-8";
+
+/* 폰트 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@100;300;400&family=Permanent+Marker&display=swap');
+
+html { font-size: 100%; }
+body { font-family: 'Montserrat', sans-serif;
+font-family: 'Nanum Pen Script', cursive;
+font-family: 'Noto Sans KR', sans-serif;
+font-family: 'Permanent Marker', cursive; font-size: 100%; background: #fffae6; width: 100%; margin: 0 auto; overflow-x: hidden; }
+
+
+/* HEAD 영화포스터 */
+#head {background:url('../images/brush_top.png') no-repeat center 117%, url('../images/poster.jpg') no-repeat center top; height: 1080px; width: 100%; background-size: 100%;}
+
+/* HEADER */
+#head #header {width: 100%; height: 6vw; background: rgba(0,0,0,0.2);  padding-top:2.5vw; box-sizing: border-box; position:fixed; top:0; z-index:99999;}
+
+/* GNB */
+#head #header .gnb { width: 70%; display: flex; text-transform: uppercase;  justify-content: space-evenly; font-weight: bolder; font-size: 1.125rem; margin: 0 auto;}
+/*#head #header .gnb a {color: #fff;}*/
+#head #header .gnb li a img {width: 100%;}
+
+
+/* 햄버거 메뉴 */
+#header .mgnb {display: none;}
+.mgnb_wrap { z-index: 99999999; position: fixed; left: 0; top:0; width: 80%; height: 100%; background: rgba(0,0,0,0.8); box-shadow: 5px 0 20px rgba(0,0,0,0.1); padding: 100px 50px 50px; box-sizing: border-box;}
+.gnb_mobile li { padding: 20px 0; border-bottom: 1px solid #eee; text-transform: uppercase;}
+.mgnb_wrap .close a {position: absolute; right: 0; top: 0; display: inline-block; background: #000; padding: 10px 20px; color: #FFF;}
+
+
+
+
+/* 시놉시스 */
+#synopsis::before { content: ""; width: 100%; height: 1300px; background: url('../images/brush_bottom1.png') no-repeat center 125%, url('../images/bg_synopsis.jpg') no-repeat center 105%; position: absolute; left: 0; z-index: -3; }
+#synopsis { width: 100%; height: 1300px; text-align: center; font-family: 'Nanum Pen Script'; }
+
+#synopsis h2 {padding: 250px 0 100px;}
+#synopsis .sn_text {width: 100%;}
+#synopsis p { color: #000; font-size: 3.125rem; line-height: 1.6; position: relative;}
+#synopsis .tommy::after {content: ""; width: 75px; height: 25px; background: #ffd02e; position: absolute; left:44.8%; top: 30px; z-index: -1; transform: skewX(-20deg);}
+#synopsis .hedwig::after {content: ""; width: 110px; height: 25px; background: #ffd02e; position: absolute; left:49.5%; top: 115px; z-index: -1; transform: skewX(-20deg);}
+#synopsis .angryinch::after {content: ""; width: 180px; height: 25px; background: #ffd02e; position: absolute; left:57.8%; top: 115px; z-index: -1; transform: skewX(-20deg);}
+#synopsis .half::after {content: ""; width: 210px; height: 25px; background: #ffd02e; position: absolute; left:44%; top: 440px; z-index: -1; transform: skewX(-20deg);}
+#synopsis .love::after {content: ""; width: 600px; height: 25px; background: #ffd02e; position: absolute; left:34%; top: 520px; z-index: -1; transform: skewX(-20deg);}
+
+
+/* CAST */
+#cast { width: 100%; height: 2331px; background: url('../images/brush_bottom1.png') no-repeat center -16%, url('../images/brush_top.png') no-repeat center 103.5%,url('../images/bg_cast.jpg') no-repeat center top; position: relative;}
+#cast h2 {text-align: center; padding: 250px 0 100px;}
+#cast .tommy {position: absolute; top:19%; left: 18%;}
+#cast .tommy img {width: 100%;}
+#cast .tommy_info {font-family:'Noto Sans KR'; color: #fff; text-align: center; line-height: 1.5; padding-top: 10px; position: absolute; top:36%; left: 13.5%; font-weight: 300;}
+#cast .yizhak {position: absolute; top:19%; right: 18%;}
+#cast .yizhak img {width: 100%;}
+#cast .yizhak_info {font-family:'Noto Sans KR'; color: #fff; text-align: center; line-height: 1.5; padding-top: 10px; position: absolute; top:36%; right: 13.5%; font-weight: 300;}
+#cast .mom {position: absolute; bottom:18%; left: 18%;}
+#cast .mom img {width: 100%;}
+#cast .mom_info {font-family:'Noto Sans KR'; color: #fff; text-align: center; line-height: 1.5; padding-top: 10px; position: absolute; bottom:14.5%; left: 15.5%; font-weight: 300;}
+#cast .ruther {position: absolute; bottom: 18%; right: 18%;}
+#cast .ruther img {width: 100%;}
+#cast .ruther_info {font-family:'Noto Sans KR'; color: #fff; text-align: center; line-height: 1.5; padding-top: 10px; position: absolute; bottom:14.5%; right: 12.5%; font-weight: 300;}
+#cast .hedwig {position: absolute; top: 40%; left: 38.5%;}
+#cast .hedwig_info {font-family:'Noto Sans KR'; color: #fff; text-align: center; font-size: 1.063rem; line-height: 1.5; padding-top: 10px; position: absolute; top:61.6%; left: 41%; font-weight: 300; } 
+#cast .arrow {position: absolute; top: 41.5%; left: 26%;}
+#cast .arrow2 {position: absolute; top: 52.5%; left: 26%;}
+#cast .arrow3 {position: absolute; top: 41.5%; right: 26%;}
+#cast .arrow4 {position: absolute; top: 52.5%; right: 26%;}
+
+#cast .mcast {display: none;}/*모바일숨기기*/
+
+
+
+/* VIDEO */
+#video {text-align: center; height: 1600px; width: 100%; position: relative;}
+#video::after {content: ""; display: block; clear: both;}
+#video .trailer {margin-bottom: 80px;}
+#video h2 { padding: 200px 0 150px;}
+#video .more a {display: none;}
+#video .clip_area { width: 53.5%; margin: 0 auto; position: relative;}
+#video .clip_area .clip {width: 100%;}
+#video .clip_area .clip li {width: 100%;}
+#video .clip_area .clip li a img {width: 100%;}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+#video .clip_area .bx-wrapper .bx-prev {
+opacity: 0.5;
+left: -7%; 
+background:  url(../images/video_prev.png) no-repeat center center ;}
+
+#video .clip_area .bx-wrapper .bx-next {
+opacity: 0.5;
+right: -7%;
+background: url(../images/video_next.png) no-repeat center center;}
+
+#video .clip_area .bx-wrapper .bx-controls-direction a {
+position: absolute;
+top: 35%;
+margin-top: -16px;
+outline: 0;
+width: 42px;
+height: 80px;
+text-indent: -9999px;
+z-index: 9999;}
+
+#video .clip_area .bx-wrapper .bx-controls-direction a.disabled {
+display: none;}
+
+
+
+/* OST */
+#ost { width: 100%; height: 1920px; box-sizing: border-box; background: url('../images/brush_bottom2.png') no-repeat center -52%; background-size: 100%;}
+
+/* 뮤직1 */
+#ost .music1 { width: 100%; height: 50%; box-sizing: border-box; position: relative; display: flex;}
+
+#ost .music1 .img1 {width: 50%; background: url('../images/brush_bottom2.png') no-repeat left -52% ,url('../images/ost_pic1.jpg') no-repeat center center; text-indent: -9999px;}
+
+#ost .music1 .text1 {width: 50%; height: 100%; text-align: center; padding: 10%; background: url('../images/brush_bottom2.png') no-repeat right -52% #001bbd; box-sizing: border-box; position: relative;}
+#ost .music1 h3 {padding-bottom: 12%;}
+#ost .music1 .desc {color: #fff; font-family: 'Noto Sans KR'; font-weight:300; font-size:1.18rem; padding-bottom: 10%; }
+#ost .music1 .lyrics {color: #fff; font-family: 'Permanent Marker'; font-size: 1.7rem; line-height: 1.6; padding-bottom: 20%;}
+#ost .music1 .bar{ position: absolute; left: 18.9%; bottom:8% }
+#ost .music1 .bar img{100%;}
+#ost .music1 .on {font-family: 'Noto Sans KR'; letter-spacing: 1px; color: #fff; position: absolute; bottom: 27%; left: 20.6%; font-weight: 300;}
+#ost .music1 .full {font-family: 'Noto Sans KR'; letter-spacing: 1px; color: #fff; position: absolute; bottom: 27%; right: 20.1%; font-weight: 300;}
+
+
+/* 뮤직 2*/
+#ost .music2 {width: 100%; height: 960px; background: url('../images/brush_top.png') no-repeat center 123%; box-sizing: border-box; position: relative; display: flex;}
+#ost .music2 .img2 {width: 50%; background: url('../images/brush_top.png') no-repeat right 123%, url('../images/ost_pic2.jpg') no-repeat center center; text-indent: -9999px;}
+#ost .music2 .text2 {width:50%; height:100%;  text-align: center; padding: 10%; box-sizing: border-box; background: url('../images/brush_top.png') no-repeat left 123% #001bbd; position: relative;}
+#ost h3 {padding-bottom: 60px;}/*노래제목*/
+#ost .music2 h3 {padding-bottom: 12%;}
+#ost .music2 .desc2 {color: #fff; font-family: 'Noto Sans KR'; font-weight:300; font-size:1.18rem; padding-bottom: 12%; }
+#ost .music2 .lyrics2 {color: #fff; font-family: 'Permanent Marker'; font-size: 1.7rem; line-height: 1.6; padding-bottom: 20%;}
+#ost .music2 .bar2 {position: absolute;left: 20%; }
+#ost .music2 .bar2 img {width: 100%;}
+#ost .music2 .on2 {font-family: 'Noto Sans KR'; letter-spacing: 1px; color: #fff; position: absolute; bottom: 33.8%; left: 22%; font-weight: 300;}
+#ost .music2 .full2 {font-family: 'Noto Sans KR'; letter-spacing: 1px; color: #fff; position: absolute; bottom: 33.8%; left: 77.5%; font-weight: 300;}
+
+
+
+
+#ost .most {display: none;}/* 모바일 숨기기 */
+
+
+/* GALLERY */
+#gallery {position: relative; width: 100%; height: 1700px;}
+#gallery h2 { text-align: center; padding: 250px 0 100px;}
+#gallery .frames {width: 100%;}
+#gallery .frame1 {position: absolute; top:36%; /*left: 235px;*/ left:13%;}
+#gallery .frame2 {position: absolute; top:30%; /*left: 805px;*/ 
+left:42%;}
+#gallery .frame3 {position: absolute; top:52%; /*left: 837px;*/ left: 44%;}
+#gallery .frame4 {position: absolute; top:32%; /*right: 320px*/ right: 17%;}
+#gallery .frame5 {position: absolute; top:56%; right: 13%;}
+
+.frames_m {display: none;}
+
+/* FOOTER */
+#footer {width: 100%; height: 700px; background: url('../images/brush_bottom2.png') no-repeat center -70% #000; position: relative; }
+#footer h4 {position: absolute; top: 55%; left: 358px; }
+#footer .copy {font-family: 'Montserrat'; font-weight: bold; color: #898889; position: absolute; top:60%; left: 34.5%; text-transform: uppercase;}
+#footer .sns {display: flex; width: 13.4%; justify-content: space-between; position: absolute; top: 58.5%; right: 358px; }
+
+
+/* 태블릿 */
+@media all and (min-width:768px) and (max-width:1024px){
+
+/* head */
+#head {width: 100%; background-size: 100%; height: 55vw; }
+#head #header {width: 100%; height: 7vw;}
+#head #header .gnb li a img {width: 70%}
+
+
+/* 시놉시스 */  
+#synopsis::before { content: ""; width: 100%; height:69vw; position: absolute; background-size: 100%; }
+#synopsis { width: 100%; height: 75vw;}
+#synopsis h2 {padding: 10% 0 6.5%;}
+#synopsis h2 img {width: 28vw;}
+#synopsis .sn_text {width: 100%;}
+#synopsis p {font-size: 4vw; line-height: 1.6;}
+#synopsis .tommy::after {width: 6vw; height: 2vw; position: absolute; left:42%; top: 5.8%;}
+#synopsis .hedwig::after {width: 9vw; height: 2vw; position: absolute; left:49%; top: 20.9%;}
+#synopsis .angryinch::after {width: 15vw; height: 2vw; position: absolute; left:62%; top: 20.9%;}
+#synopsis .half::after {width: 17vw; height: 2vw; position: absolute; left:40.3%; top: 78.3%; }
+#synopsis .love::after {width: 48vw; height: 2vw; position: absolute; left:25.3%; top: 93%;}
+
+/* 캐스트 */
+#cast { width: 100%; height: 120vw; background-size: 100%;  background: url('../images/brush_bottom1.png') no-repeat center -15.5%, url('../images/brush_top.png') no-repeat center 103.5%,url('../images/bg_cast.jpg') no-repeat center top; background-size: 100%; }
+#cast h2 {padding: 15% 0 6.5%;}
+#cast h2 img {width: 16vw;}
+#cast .tommy {top:22%; left: 10%;}
+#cast .tommy img {width: 21vw;}
+#cast .tommy_info {display: none; font-size: 1.6vw; top:39%; left: 10%; }
+#cast .yizhak {top:22%; right: 10%;}
+#cast .yizhak img {width: 21vw;}
+#cast .yizhak_info {display: none; font-size: 1.6vw; top:39%; right: 10%;}
+#cast .mom {bottom:14%; left: 10%;}
+#cast .mom img {width: 21vw;}
+#cast .mom_info {display: none; font-size: 1.6vw;}
+#cast .ruther { bottom: 14%; right: 10%;}
+#cast .ruther img {width: 21vw;}
+#cast .ruther_info {display: none; font-size: 1.6vw; }
+#cast .hedwig {top: 43%; left: 36.2%;}
+#cast .hedwig img {width: 27vw;}
+#cast .hedwig_info {display: none; font-size: 1.6vw; top: 69%; left: 40%; } 
+#cast .arrow {top: 42%; left:19%;}
+#cast .arrow img {width: 14vw;}
+#cast .arrow2 {top:55%; left: 19%;}
+#cast .arrow2 img {width: 14vw;}
+#cast .arrow3 { top: 42%; right: 19%;}
+#cast .arrow3 img {width: 14vw;}
+#cast .arrow4 {top: 55%; right: 19%;}
+#cast .arrow4 img {width: 14vw;}
+
+/* 비디오 */
+#video {width: 100%;; text-align: center; height: 80vw; position: relative;}
+#video::after {content: ""; display: block; clear: both;}
+#video .trailer {margin-bottom: 5vw;}
+#video .trailer iframe {width: 60vw; height: 34vw;}
+#video h2 {padding: 6% 0 6.5%;}
+#video h2 img {width: 16vw;}
+#video .more a {display: none;}
+#video .clip_area { width: 50vw; margin: 0 auto; position: relative;}
+#video .clip_area .clip li a img {width: 20vw;}
+
+/* DIRECTION CONTROLS (NEXT / PREV) */
+#video .clip_area .bx-wrapper .bx-prev {opacity: 1;left: -12%; 
+background:  url(../images/video_prev.png) no-repeat center center ; background-size: 3vw;}
+#video .clip_area .bx-wrapper .bx-next {opacity: 1;right: -12%;
+background: url(../images/video_next.png) no-repeat center center;
+background-size: 3vw;}
+#video .clip_area .bx-wrapper .bx-controls-direction a {
+top: 25%;margin-top: -16px;}
+
+
+/* 오스트 */
+#ost { width: 100%; height: 100vw; box-sizing: border-box; background: url('../images/brush_bottom2.png') no-repeat center -42%; background-size: 100%; position: relative;}
+
+
+/* 뮤직1 */
+#ost .music1 { width: 100%; height: 48.2vw; box-sizing: border-box; position: relative; display: flex;}
+
+#ost .music1 .img1 {width: 50%; background: url('../images/brush_bottom2.png') no-repeat left -10% ,url('../images/ost_pic1.jpg') no-repeat center center; text-indent: -9999px; background-size: 100%;}
+
+#ost .music1 .text1 {width: 50%; height: 100%; text-align: center; padding: 7vw; background: url('../images/brush_bottom2.png') no-repeat right -10% #001bbd; background-size: 100%; box-sizing: border-box; position: relative;  }
+#ost .music1 h3 {padding-bottom: 4vw;}
+#ost .music1 h3 img {height: 4.5vw;}
+#ost .music1 .desc {font-size:1.18vw; padding-bottom: 4vw;}
+#ost .music1 .lyrics {font-size: 1.7vw; line-height: 1.6; padding-bottom: 20%;}
+#ost .music1 .bar{ width: 70%; left: 7.6vw; bottom: 5.3vw;}
+#ost .music1 .bar img{width: 100%;}
+#ost .music1 .on { bottom: 14.5vw; left: 8.7vw; font-weight: 300; font-size: 1vw;}
+#ost .music1 .full { bottom: 14.5vw; right: 8.2vw; font-weight: 300;font-size: 1vw;}
+
+
+/* 뮤직 2*/
+#ost .music2 {width: 100%; height: 49vw;  background: url('../images/brush_top.png'); position: relative; display: flex; background-size: 100%;}
+#ost .music2 .img2 {width: 50%; background: url('../images/brush_top.png') no-repeat right 45vw, url('../images/ost_pic2.jpg') no-repeat center center; text-indent: -9999px; background-size: 100%;}
+#ost .music2 .text2 {width:50%; height:100%;  text-align: center; padding: 7vw; box-sizing: border-box; background: url('../images/brush_top.png') no-repeat left 45vw #001bbd; position: relative; background-size: 100%;}
+
+#ost .music2 h3 {padding-bottom: 4vw;}
+#ost .music2 h3 img {height: 4.5vw;}
+#ost .music2 .desc2 { font-size:1.18vw; padding-bottom: 3.1vw; line-height: 1.6}
+#ost .music2 .lyrics2 {font-size: 1.7vw; line-height: 1.6; padding-bottom: 2vw;}
+#ost .music2 .bar2 {width: 70%; left: 7.5vw; bottom: 5.3vw;}
+#ost .music2 .bar2 img {width: 100%;}
+#ost .music2 .on2 {bottom: 14.5vw; left: 8.6vw; font-weight: 300; font-size: 1vw;}
+#ost .music2 .full2 {bottom: 14.5vw; right: 7.6vw; font-weight: 300; font-size: 1vw;}
+
+
+
+/* GALLERY */
+
+#gallery {position: relative; width: 100%; height: 85vw;}
+#gallery h2 { text-align: center; padding: 8% 0 6.5%;;}
+#gallery h2 img {width: 25vw;}
+#gallery .frames {width: 100%;}
+#gallery .frame1 { position: absolute; top:26vw;  left:8vw;}
+#gallery .frame1 img {width: 27vw;}
+#gallery .frame2 {position: absolute; top:20vw;  left:39.5vw;}
+#gallery .frame2 img{width: 26vw;}
+#gallery .frame3 {position: absolute; top:42vw;  left: 42vw;}
+#gallery .frame3 img{width: 18vw;}
+#gallery .frame4 {position: absolute; top:25vw;  right: 10.5vw;}
+#gallery .frame4 img{width: 16vw;}
+#gallery .frame5 {position: absolute; top:52vw; right: 8vw;}
+#gallery .frame5 img{width: 26vw;}
+
+/* FOOTER */
+#footer {width: 100%; height: 33vw; background: url('../images/brush_bottom2.png') no-repeat center -12vw #000; position: relative; background-size: 100%; }
+#footer h4 {position: absolute; top: 17vw; left: 10vw; }
+#footer h4 img {width: 12vw;}
+#footer .copy {font-family: 'Montserrat'; font-weight: bold; color: #898889; position: absolute; top:18.5vw; left: 24.1vw; text-transform: uppercase; font-size: 1vw;}
+#footer .sns {display: flex; width: 13.4%; justify-content: space-between; position: absolute; top: 17.7vw; right: 10vw; }
+#footer .sns img {height: 2vw;}
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+/* 모바일 */
+@media all and (max-width:767px){
+#head {width: 100%; height: 55vw; background-size: 100%; }
+#head #header {width: 100%; height: 8vw; padding: 0; box-sizing: border-box; background-size: 100%; }
+#head #header .gnb {display: none;}
+#head #header .mgnb {display: block; order: 2; padding-left: 90%; padding-top: 2%}
+#head #header .mgnb img {width: 50%;}
+
+/* 시놉시스 */
+#synopsis::before { content: ""; width: 100%; height: 67vw; background-size:100%; }
+#synopsis { width: 100%; height: 70vw;}
+#synopsis h2 {padding: 8% 0 8%;}
+#synopsis h2 img {width: 28%;}
+#synopsis .sn_text {width: 100%;}
+#synopsis p { color: #000; font-size: 4vw; line-height: 1.5; position: relative;}
+#synopsis .tommy::after {width: 5.8%; height: 4.7%;  position: absolute; left:42.2%; top: 6%; transform: skewX(-10deg);}
+#synopsis .hedwig::after { width: 8.9%; height: 4.7%;  position: absolute; left:49.3%; top: 21%; transform: skewX(-10deg);}
+#synopsis .angryinch::after { width: 14.6%; height: 4.7%;  position: absolute; left:62.5%; top: 21%;transform: skewX(-10deg);}
+#synopsis .half::after { width:17.3%; height: 4.7%;  position: absolute; left:40.5%; top: 79%; transform: skewX(-10deg);}
+#synopsis .love::after { width: 48.7%; height: 4.7%; position: absolute; left:25.5%; top: 93%;  transform: skewX(-10deg);}
+
+
+/* CAST */
+
+#cast { width: 100%; height: 120vw; background: url('../images/brush_bottom1.png') no-repeat center -16% , url('../images/brush_top.png') no-repeat center 104% ,url('../images/bg_cast.jpg') no-repeat center top; z-index: 9999; background-size: 100%; position: relative;}
+#cast h2 {text-align: center; padding: 13% 0 8%;}
+#cast h2 img {width: 16%;}
+#cast .cast_warp {display: none;}/*pc,태블렛 버전*/
+#cast .mcast {display: flex; position: absolute; top:0; left:0; max-width: 200vw; height: 100vw;}
+#cast .mcast li {text-align: center;  width: 100%; height: 100%; padding:0 10%; box-sizing: border-box;}
+#cast .mcast li img {width: 55vw;}
+#cast .mcast li > p {text-align: center;  font-size: 2.5vw; font-family:'Noto Sans KR'; color: #fff; line-height: 1.4; padding-top: 10px; font-weight: 300; text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+
+
+
+
+/*#cast .hedwig {position: absolute; top:19%; left: 21%}
+#cast .hedwig img {height: 65vw;}
+#cast .hedwig .info {width: 100%; font-size: 2.5vw; padding-top: 3%; position: absolute; left: 3.2%;}*/
+
+
+
+
+/* VIDEO */
+
+#video { height: 80vw; width: 100%; position: relative;}
+#video::after {content: ""; display: block; clear: both;}
+#video h2 { padding: 5% 0 8%;}
+#video h2 img {width: 16%;}
+#video .trailer { width: 80%; height: 52%; margin: 0 auto}
+#video .trailer iframe { width: 100%; height: 100%;}
+#video .clip_area {display: none;}
+#video .more a {display: inline-block; font-family: 'Noto Sans KR'; text-transform: uppercase; font-size:2.7vw; padding: 2% 5%; border: 1px solid #000; margin-top: 6%; transition: background 0.5s;}
+#video .more a:hover {background: #000; color: #fff;}
+
+
+/* OST */
+
+
+#ost {width: 100%; height: 94vw;}
+
+#ost .ost_pc {display: none;}
+#ost .most { width: 100%; height: 100%; display: flex; text-align: center; position: relative;}
+#ost .most li {color: #fff; width: 100%; box-sizing: border-box; padding: 10vw;}
+#ost .most .mo1 {background: url('../images/brush_bottom2.png') no-repeat center -17% ,url('../images/brush_top.png') no-repeat center 110% ,url('../images/m_ost_bg1.jpg') no-repeat center top; background-size: 100%; }
+#ost .most .mo1 h3 {padding-bottom: 12%;}
+#ost .most .mo1 h3 img {width: 56%;} 
+#ost .most .mo1 .desc {font-size:2.5vw; padding-bottom: 10%; font-family: 'Noto Sans KR';}
+#ost .most .mo1 .lyrics {font-size: 3.5vw; line-height: 1.5; padding-bottom: 10%;}
+#ost .most .mo1 .on {position: absolute; bottom: 34%; right: 83%; font-size: 1vw; font-family: 'Noto Sans KR';}
+#ost .most .mo1 .full {position: absolute; bottom: 34%; right: 12%; font-size: 1vw; font-family: 'Noto Sans KR';}
+#ost .most .mo1 .bar img {width:100%;}
+
+#ost .most .mo2 {background:  url('../images/brush_bottom2.png') no-repeat center -17% ,url('../images/brush_top.png') no-repeat center 110% , url('../images/m_ost_bg2.jpg') no-repeat center top; background-size: 100%; }
+#ost .most .mo2 h3 {padding-bottom: 12%;}
+#ost .most .mo2 h3 img {width: 56%;} 
+#ost .most .mo2 .desc {font-size:2.5vw; padding-bottom: 10%; font-family: 'Noto Sans KR';}
+#ost .most .mo2 .lyrics {font-size: 3.5vw; line-height: 1.5; padding-bottom: 10%;}
+#ost .most .mo2 .on {position: absolute; bottom: 34%; right: 83%; font-size: 1vw; font-family: 'Noto Sans KR';}
+#ost .most .mo2 .full {position: absolute; bottom: 34%; right: 12%; font-size: 1vw; font-family: 'Noto Sans KR';}
+#ost .most .mo2 .bar img {width:100%;}
+
+
+/* GALLERY */
+
+#gallery {position: relative; width: 100%; height: 80vw;}
+
+#gallery h2 {padding: 8% 0 8%;}
+#gallery h2 img {width: 30%; }
+
+
+#gallery .frame1 {position: absolute; top:36%; left:13%;}
+#gallery .frame1 img {width: 24vw;}
+
+#gallery .frame2 {position: absolute; top:30%; 
+left:42%;}
+#gallery .frame2 img {width: 21vw;}
+
+#gallery .frame3 {position: absolute; top:53%; left: 44%;}
+#gallery .frame3 img {width: 15vw;}
+
+#gallery .frame4 {position: absolute; top:33.5%; right: 17%;}
+#gallery .frame4 img {width:11.5vw;}
+
+
+#gallery .frame5 {position: absolute; top:56%; right: 12%;}
+#gallery .frame5 img {width:23vw;}
+
+    
+
+
+
+/* FOOTER */
+#footer {width: 100%; height: 60vw; background: url('../images/brush_bottom2.png') no-repeat center -24% #000; background-size: 100%; position: relative; }
+#footer h4 {position: absolute; top:35%; left:40.5%;}
+#footer h4 img {width: 20vw}
+#footer .sns {display: flex; align-items: center; width: 40%; justify-content: space-between; position: absolute; top:60%; left: 32.5%; }
+#footer .sns img {width: 5vw;}
+#footer .copy {position:absolute; top:78%; left: 0;  font-size: 1.2vw; text-align: center; width: 100%; }
+
+
+}
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+
+
+/* 초기화 요소 */
+*{ margin: 0; padding: 0;}
+
+ol,ul {list-style: none;}
+
+a:link,a:visited,a:hover,a:active {text-decoration: none; color: #000;}
+
+body {font-family: 'Noto Sans KR'; font-size: 16px; line-height: 26px; color: #000;}
+
+
+/* */
+
+.view a {color: #fff; font-size: 0.8rem; display: inline-block; padding: 0.7% 2.5%; letter-spacing: 2px; background: rgba(0,0,0,0.9);/*#fffae6*/; text-transform: uppercase; position: absolute; top:7.2vw; right: 7%; z-index: 3; font-weight: bold; z-index: 99999; transition: all 0.5s; box-shadow: 0.5px 0.5px 10px rgba(0,0,0,0.5);}
+.view a:hover {background: rgba(255,250,230,1); color: #000;}
+
+
+.btn_close {display:block; width: 5vw; position: absolute; top:1vw; right: 1vw; min-height: 5vw; box-sizing: border-box; transition: all 0.3s; z-index: 999;}
+.btn_close:hover {opacity: 0.3;}
+.btn_close a img {width: 100%;}
+
+#styleguide {
+    max-width:1920px; height:0; position: relative;  
+    padding-bottom: calc(13365/1920*100%);
+    background-image: url('../images/hedwig_styleguide.jpg');
+    background-size: 100vw; 
+    background-repeat: no-repeat;
+    background-position: center top;
+}
+
+#styleguide .btn_back a {
+    color: #fff; font-size: 0.8rem; display: inline-block; padding: 0.7% 2.5%; letter-spacing: 2px; background: rgba(0,0,0,0.9);/*#fffae6*/; text-transform: uppercase; font-weight: bold; z-index: 99999; box-shadow: 0.5px 0.5px 10px rgba(0,0,0,0.5);
+    background: #000; position: absolute; bottom:3vw; right: 11%; z-index: 1; transition: background 0.5s; }
+#styleguide .btn_back a:hover {background: rgba(0,0,0,0.6);}
+
+
+
