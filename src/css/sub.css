@@ -170,4 +170,126 @@ button {
   background-color: transparent;
   border: none;
   cursor: pointer;
-}/*# sourceMappingURL=reset.css.map */
+}
+
+/*INTERFACE*/
+/*스타일 묶음*/
+/*----color system----*/
+/*----font system----*/
+/*----Media Query----*/
+/*max-width:320px*/
+/*min-width:768px*/
+/*min-width:980px*/
+/*min-width:1200px*/
+/*FUNCTION*/
+/*컴포넌트 묶음*/
+/*Media Query*/
+/*button components*/
+/*Flex*/
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 0 24px;
+  height: 4rem;
+}
+@media screen and (min-width: 768px) {
+  .header {
+    margin-bottom: 3.2rem;
+    padding: 0 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header {
+    margin-bottom: 4rem;
+    height: 5.4rem;
+  }
+}
+.header .h-menu {
+  position: relative;
+  width: 64px;
+  height: 50px;
+  z-index: 200;
+}
+.header .h-menu .button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 10;
+  width: 64px;
+  height: 50px;
+  cursor: pointer;
+  opacity: 0;
+}
+.header .h-menu .close {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 0.6rem;
+  width: 64px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.header .h-menu .close > div {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: rgab(0, 0, 0, 0);
+  height: 2px;
+  width: 60%;
+}
+.header .h-menu .close > div::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 2px;
+  background: #2538AD;
+  transform: rotate(45deg);
+}
+.header .h-menu .close > div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 30px;
+  height: 2px;
+  background: #2538AD;
+  transform: rotate(135deg);
+}
+.header .logo {
+  width: 40px;
+  height: 40px;
+}
+.header .logo a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/*header끝*/
+.container {
+  /*--------(Common)Sub-Visual 공통스타일--------*/
+}
+.container .title-main {
+  color: #464646;
+}
+.container .title-sub {
+  color: #464646;
+}
+.container .title-deskTxt {
+  color: #464646;
+}
+.container .title-txt {
+  color: #464646;
+}
+.container .title-small {
+  color: #464646;
+}/*# sourceMappingURL=sub.css.map */

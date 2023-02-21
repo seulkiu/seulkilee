@@ -1,0 +1,49 @@
+@import "reset";
+@import "interface";
+@import "function";
+
+
+.header{
+    // background-color: $color-bg;
+    @include flex-between;
+    position: fixed; top: 0; left:0; right:0; z-index:100; padding: 0 24px; height: 4rem;
+    @media screen and (min-width:768px) {margin-bottom:3.2rem; padding:0 40px;}
+    @media screen and (min-width:1200px) {margin-bottom: 4rem; height: 5.4rem;}
+    .h-menu{
+        position: relative; width: 64px; height: 50px; z-index: 200;
+        .button{
+            position: absolute; top: 0; left: 0;
+            margin: 0; z-index: 10; width: 64px; height: 50px;
+            cursor: pointer; opacity: 0;
+        }
+        .close{
+            position: absolute; top: 0; left: 0; padding: 0.6rem; width: 64px; height: 50px;
+            display: flex; align-items: center; justify-content: center;
+            &>div{
+                position: relative; top: 0; left: 0; background:rgab(0,0,0,0); height: 2px; width: 60%;
+                &::before{
+                    content: ''; position: absolute; top: 0; width:30px; height: 2px; background: $color-point; transform: rotate(45deg);
+                }
+                &::after{content: ''; position: absolute; top:0; width:30px; height: 2px; background: $color-point; transform: rotate(135deg);}
+            }
+            
+        }
+    }
+
+    .logo{
+        width: 40px;
+        height: 40px;
+        a{display: block; width: 100%; height: 100%;}
+    }
+}/*header끝*/
+
+.container{
+    .title-main{ color: $color-middle-black;}
+    .title-sub{ color: $color-middle-black;}
+    .title-deskTxt{ color: $color-middle-black;}
+    .title-txt{ color: $color-middle-black;}
+    .title-small{ color: $color-middle-black;}
+
+    /*--------(Common)Sub-Visual 공통스타일--------*/
+    
+}
