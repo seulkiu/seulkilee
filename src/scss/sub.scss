@@ -53,6 +53,10 @@
             @media screen and (min-width:980px) { padding: 4rem 40px;}
             @media screen and (min-width:1200px) { margin: 0 auto; padding: 6rem 60px; width: 1200px; max-width: 1200px;}
             @media screen and (min-width:1400px) { width: 1400px; max-width: 1400px;}
+            .btn-view {
+                color: $color-white; display: inline-block; width: 280px; height: 60px; font-weight: 400; border: 1px solid $color-white; transition: all 0.4s ease; margin-top:2.6rem; box-sizing: border-box; font-weight: bold;
+                @include flex; justify-content: center;
+            }
         }
         &.helsi-visual {
             background: #0B588F; display: flex; align-items: center; justify-content: center; padding: 6rem 0;
@@ -87,10 +91,14 @@
                 .project-info{
                     @include flex-row; justify-content: start; align-items: baseline; opacity: 0.8;
                     .label{ font-weight: bold; padding-right: 2rem;}    
+                }  
+                .btn-view{
+                    &:hover{
+                        color:#C73400; background: #fff;
+                    }
                 }
             }
         }
-        
     }
     .sub-section{
         padding: 4rem 0; background: $color-bg-grey;
@@ -149,6 +157,7 @@
                 .text-wrap{
                     @include flex-column; width: 70%; 
                     .title-main{ color: $color-white; text-align: center;}
+                    .title-sub{ color: $color-white;}
                     .title-txt{ color: $color-white;}
                 }
             }

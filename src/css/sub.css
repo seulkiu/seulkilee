@@ -323,6 +323,21 @@ button {
     max-width: 1400px;
   }
 }
+.container .sub-visual .inner .btn-view {
+  color: #ffffff;
+  display: inline-block;
+  width: 280px;
+  height: 60px;
+  font-weight: 400;
+  border: 1px solid #ffffff;
+  transition: all 0.4s ease;
+  margin-top: 2.6rem;
+  box-sizing: border-box;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .container .sub-visual.helsi-visual {
   background: #0B588F;
   display: flex;
@@ -460,6 +475,10 @@ button {
   font-weight: bold;
   padding-right: 2rem;
 }
+.container .sub-visual.hedwig-visual .inner .btn-view:hover {
+  color: #C73400;
+  background: #fff;
+}
 .container .sub-section {
   padding: 4rem 0;
   background: #F2F1ED;
@@ -595,6 +614,9 @@ button {
 .container .sub-section .color-list-wrap .item .text-wrap .title-main {
   color: #ffffff;
   text-align: center;
+}
+.container .sub-section .color-list-wrap .item .text-wrap .title-sub {
+  color: #ffffff;
 }
 .container .sub-section .color-list-wrap .item .text-wrap .title-txt {
   color: #ffffff;
