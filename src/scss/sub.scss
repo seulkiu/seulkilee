@@ -22,9 +22,9 @@
             &>div{
                 position: relative; top: 0; left: 0; background:rgab(0,0,0,0); height: 2px; width: 60%;
                 &::before{
-                    content: ''; position: absolute; top: 0; width:30px; height: 2px; background: $color-point; transform: rotate(45deg);
+                    content: ''; position: absolute; top: 0; width:30px; height: 2px; background: $color-black; transform: rotate(45deg);
                 }
-                &::after{content: ''; position: absolute; top:0; width:30px; height: 2px; background: $color-point; transform: rotate(135deg);}
+                &::after{content: ''; position: absolute; top:0; width:30px; height: 2px; background: $color-black; transform: rotate(135deg);}
             }
             
         }
@@ -45,5 +45,93 @@
     .title-small{ color: $color-middle-black;}
 
     /*--------(Common)Sub-Visual 공통스타일--------*/
-    
+    .sub-visual{
+        height: 100vh;
+        &.helsi-visual {
+            background: #0B588F; display: flex; align-items: center; justify-content: center; padding: 6rem 0;
+        }
+    }
+    .sub-section{
+        padding: 4rem 0; background: $color-bg-grey;
+        .inner {
+            padding: 0 24px;
+            @include mobile { padding: 2rem 40px;}
+            @include tablet-mini { padding: 4rem 40px;}
+            @include desktop { margin: 0 auto; padding: 4rem 60px; width: 1200px; max-width: 1200px;}
+            @media screen and (min-width:1400px) { width: 1400px; max-width: 1400px;}
+            .sc-title-wrap{
+                margin-bottom: 3rem;
+                @include tablet {margin-bottom: 4rem;}
+                @include tablet-mini {margin-bottom: 5rem;}
+                & > h2{ 
+                    margin-bottom: 1rem;
+                    span{font-weight: 700;}
+                }
+            }
+        }
+        .consts-wrap{
+            .logo-list-wrap{
+                @media screen and (min-width:768px) { @include flex-between; flex-wrap: wrap; }
+                .list{
+                    @include flex-column; margin-bottom: 3rem;
+                    @media screen and (min-width:768px) {
+                        width: 49%; margin-bottom: 3rem;
+                        &:nth-child(2n+0){transition-delay: 0.2s;}
+                    }
+                    background: #fff; border-radius: 1.8rem; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                    &:nth-child(2) { background: #0B588F;}
+                    img {
+                        width: 60%; max-width: 350px; margin: 0 auto; 
+                    }
+
+                }
+            }
+        }
+        .color-list-wrap{
+            @include flex-column;
+            @include tablet-mini{
+                flex-direction: row; justify-content: space-around;
+            }
+            .item{
+                width: 70%; box-sizing: border-box; background: $color-white; border-radius: 50%; 
+                &::before {content: ""; display: block; padding-top: 100%;}
+                @include tablet-mini {
+                    width: 30%; margin-right: 2%; max-width: 450px;
+                    &:nth-child(3){margin-right: 0;}
+                }
+                @include flex; justify-content: center; align-items: center;
+                &:nth-child(1) { background: url(../images/helsi-color-bg-1.png) no-repeat; background-size: 100% auto;}
+                &:nth-child(2) { background: url(../images/helsi-color-bg-2.png) no-repeat; background-size: 100% auto;}
+                &:nth-child(3) { background: url(../images/helsi-color-bg-3.png) no-repeat; background-size: 100% auto;}
+                .text-wrap{
+                    @include flex-column; width: 70%; 
+                    .title-sub{ color: $color-white; text-align: center;}
+                }
+            }
+        }
+        &.section-project-font{
+            .title-main{color: $color-white;}
+            .title-txt{color: $color-white;}
+            background: #0B588F;
+            .conts-wrap{
+                .font-list-wrap{
+                    @media screen and (min-width: 768px) {@include flex-between; flex-wrap: wrap;}
+                    .list{
+                        @include flex-column; margin-bottom: 3rem;
+                        @media screen and (min-width: 768px) {
+                            width: 49%; margin-bottom: 3rem; 
+                            &:nth-child(2) { transition-delay: 0.2s;}
+                        }
+                        .font-wrap{
+                            background: rgba(0,0,0,0.05); box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                            img{
+                                width: 60%; max-width: 350px; margin: 0 auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
