@@ -296,12 +296,76 @@ button {
 .container .sub-visual {
   height: 100vh;
 }
+.container .sub-visual .inner {
+  padding: 0 24px;
+}
+@media screen and (min-width: 768px) {
+  .container .sub-visual .inner {
+    padding: 2rem 40px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .container .sub-visual .inner {
+    padding: 4rem 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .sub-visual .inner {
+    margin: 0 auto;
+    padding: 6rem 60px;
+    width: 1200px;
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container .sub-visual .inner {
+    width: 1400px;
+    max-width: 1400px;
+  }
+}
 .container .sub-visual.helsi-visual {
   background: #0B588F;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 6rem 0;
+}
+.container .sub-visual.hedwig-visual {
+  background: url(../images/bg-hedwig-pattern.jpeg) no-repeat center center;
+  background-size: 100% auto;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+}
+.container .sub-visual.hedwig-visual .title-main {
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+.container .sub-visual.hedwig-visual .title-deskTxt {
+  color: #ffffff;
+}
+.container .sub-visual.hedwig-visual .title-txt {
+  color: #ffffff;
+}
+.container .sub-visual.hedwig-visual .bg {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  max-width: 1000px;
+  top: 1.2rem;
+  right: 0;
+}
+@media (min-width: 980px) {
+  .container .sub-visual.hedwig-visual .bg {
+    max-width: 1000px;
+    top: 2rem;
+    right: -2rem;
+  }
+}
+.container .sub-visual.hedwig-visual .sub-title-wrap {
+  margin-bottom: 5rem;
 }
 .container .sub-section {
   padding: 4rem 0;

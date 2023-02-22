@@ -47,9 +47,31 @@
     /*--------(Common)Sub-Visual 공통스타일--------*/
     .sub-visual{
         height: 100vh;
+        .inner {
+            padding: 0 24px;
+            @media screen and (min-width:768px) { padding: 2rem 40px;}
+            @media screen and (min-width:980px) { padding: 4rem 40px;}
+            @media screen and (min-width:1200px) { margin: 0 auto; padding: 6rem 60px; width: 1200px; max-width: 1200px;}
+            @media screen and (min-width:1400px) { width: 1400px; max-width: 1400px;}
+        }
         &.helsi-visual {
             background: #0B588F; display: flex; align-items: center; justify-content: center; padding: 6rem 0;
         }
+        &.hedwig-visual {
+            .title-main{color: $color-white; padding-bottom: 1rem;}
+            .title-deskTxt{color: $color-white;}
+            .title-txt{color: $color-white;}
+            background: url(../images/bg-hedwig-pattern.jpeg) no-repeat center center; background-size: 100% auto;
+            @include flex; align-items: center; justify-self: center; position: relative;
+            .bg{
+                width: 100%; height: auto; position: absolute; max-width: 1000px; top:1.2rem; right: 0;
+                @include tablet { max-width: 1000px; top: 2rem; right: -2rem;}
+            }
+            .sub-title-wrap{
+                margin-bottom: 5rem;
+            }
+        }
+        
     }
     .sub-section{
         padding: 4rem 0; background: $color-bg-grey;
