@@ -307,6 +307,9 @@ button {
   padding: 4rem 0;
   background: #F2F1ED;
 }
+.container .sub-section:last-child {
+  padding: 0;
+}
 .container .sub-section .inner {
   padding: 0 24px;
 }
@@ -335,7 +338,7 @@ button {
   }
 }
 .container .sub-section .inner .sc-title-wrap {
-  margin-bottom: 3rem;
+  margin-bottom: 4rem;
 }
 @media (min-width: 980px) {
   .container .sub-section .inner .sc-title-wrap {
@@ -346,6 +349,9 @@ button {
   .container .sub-section .inner .sc-title-wrap {
     margin-bottom: 5rem;
   }
+}
+.container .sub-section .inner .sc-title-wrap .title-main {
+  padding-bottom: 1rem;
 }
 .container .sub-section .inner .sc-title-wrap > h2 {
   margin-bottom: 1rem;
@@ -480,9 +486,15 @@ button {
 .container .sub-section.section-project-font .conts-wrap .font-list-wrap .list .font-wrap {
   background: rgba(0, 0, 0, 0.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 1.4rem;
+  margin-bottom: 2rem;
 }
 .container .sub-section.section-project-font .conts-wrap .font-list-wrap .list .font-wrap img {
-  width: 60%;
-  max-width: 350px;
+  width: 100%;
+  max-width: 600px;
   margin: 0 auto;
+  padding: 4rem 5rem;
+}
+.container .sub-section.section-project-mockup {
+  background: #F2F1ED;
 }/*# sourceMappingURL=sub.css.map */
