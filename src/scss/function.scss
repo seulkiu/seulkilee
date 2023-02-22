@@ -31,3 +31,8 @@ $breakpoint-desktop: 1200px;
   align-items: center;
   flex-direction: column;
 }
+@mixin flex-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}

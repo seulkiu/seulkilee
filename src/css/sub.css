@@ -332,7 +332,7 @@ button {
 }
 .container .sub-visual.hedwig-visual {
   background: url(../images/bg-hedwig-pattern.jpeg) no-repeat center center;
-  background-size: 100% auto;
+  background-size: 200% auto;
   display: flex;
   align-items: center;
   align-items: center;
@@ -349,23 +349,116 @@ button {
 .container .sub-visual.hedwig-visual .title-txt {
   color: #ffffff;
 }
+.container .sub-visual.hedwig-visual .label {
+  font-weight: 500;
+  opacity: 0.7;
+}
 .container .sub-visual.hedwig-visual .bg {
-  width: 100%;
+  width: 78%;
   height: auto;
   position: absolute;
   max-width: 1000px;
   top: 1.2rem;
   right: 0;
+  display: none;
 }
-@media (min-width: 980px) {
+@media (min-width: 320px) {
   .container .sub-visual.hedwig-visual .bg {
-    max-width: 1000px;
-    top: 2rem;
-    right: -2rem;
+    width: 70%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    right: -3rem;
   }
 }
-.container .sub-visual.hedwig-visual .sub-title-wrap {
-  margin-bottom: 5rem;
+@media screen and (min-width: 768px) {
+  .container .sub-visual.hedwig-visual .bg {
+    width: 78%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -3rem;
+    display: block;
+  }
+}
+@media screen and (min-width: 980px) {
+  .container .sub-visual.hedwig-visual .bg {
+    width: 80%;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .sub-visual.hedwig-visual .bg {
+    top: 50%;
+    transform: translateY(-50%);
+    right: -5rem;
+    display: block;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container .sub-visual.hedwig-visual .bg {
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0.2rem;
+    display: block;
+  }
+}
+.container .sub-visual.hedwig-visual .inner {
+  padding: 0 24px;
+}
+@media screen and (min-width: 768px) {
+  .container .sub-visual.hedwig-visual .inner {
+    padding: 2rem 40px;
+  }
+}
+@media screen and (min-width: 980px) {
+  .container .sub-visual.hedwig-visual .inner {
+    padding: 4rem 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .sub-visual.hedwig-visual .inner {
+    margin: 0 auto;
+    padding: 6rem 60px;
+    width: 1200px;
+    max-width: 1200px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container .sub-visual.hedwig-visual .inner {
+    width: 1400px;
+    max-width: 1400px;
+  }
+}
+.container .sub-visual.hedwig-visual .inner .sub-title-wrap {
+  padding: 3rem 0;
+}
+.container .sub-visual.hedwig-visual .inner .sub-title-wrap .title-main {
+  font-size: 42px;
+}
+@media screen and (min-width: 768px) {
+  .container .sub-visual.hedwig-visual .inner .sub-title-wrap .title-main {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .sub-visual.hedwig-visual .inner .sub-title-wrap .title-main {
+    font-size: 90px;
+  }
+}
+.container .sub-visual.hedwig-visual .inner .project-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+  opacity: 0.8;
+}
+.container .sub-visual.hedwig-visual .inner .project-info .label {
+  font-weight: bold;
+  padding-right: 2rem;
 }
 .container .sub-section {
   padding: 4rem 0;
@@ -493,27 +586,39 @@ button {
     margin-right: 0;
   }
 }
-.container .sub-section .color-list-wrap .item:nth-child(1) {
-  background: url(../images/helsi-color-bg-1.png) no-repeat;
-  background-size: 100% auto;
-}
-.container .sub-section .color-list-wrap .item:nth-child(2) {
-  background: url(../images/helsi-color-bg-2.png) no-repeat;
-  background-size: 100% auto;
-}
-.container .sub-section .color-list-wrap .item:nth-child(3) {
-  background: url(../images/helsi-color-bg-3.png) no-repeat;
-  background-size: 100% auto;
-}
 .container .sub-section .color-list-wrap .item .text-wrap {
   display: flex;
   align-items: center;
   flex-direction: column;
   width: 70%;
 }
-.container .sub-section .color-list-wrap .item .text-wrap .title-sub {
+.container .sub-section .color-list-wrap .item .text-wrap .title-main {
   color: #ffffff;
   text-align: center;
+}
+.container .sub-section .color-list-wrap .item .text-wrap .title-txt {
+  color: #ffffff;
+}
+.container .sub-section .color-list-wrap .item-helsi:nth-child(1) {
+  background: url(../images/helsi-color-bg-1.png) no-repeat;
+  background-size: 100% auto;
+}
+.container .sub-section .color-list-wrap .item-helsi:nth-child(2) {
+  background: url(../images/helsi-color-bg-2.png) no-repeat;
+  background-size: 100% auto;
+}
+.container .sub-section .color-list-wrap .item-helsi:nth-child(3) {
+  background: url(../images/helsi-color-bg-3.png) no-repeat;
+  background-size: 100% auto;
+}
+.container .sub-section .color-list-wrap .item-hedwig {
+  background: url(../images/hedwig-color-bg.png) no-repeat;
+  background-size: 100% auto;
+}
+.container .sub-section .color-list-wrap .item-hedwig include tablet-mini {
+  width: 30%;
+  margin-right: 2%;
+  max-width: 450px;
 }
 .container .sub-section.section-project-font {
   background: #0B588F;
