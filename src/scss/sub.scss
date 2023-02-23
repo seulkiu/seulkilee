@@ -167,10 +167,28 @@
                 &:nth-child(3) { background: url(../images/helsi-color-bg-3.png) no-repeat; background-size: 100% auto;}
             }
             .item-hedwig{
-                include tablet-mini {
+                @include tablet-mini {
                     width: 30%; margin-right: 2%; max-width: 450px;
                 }
-                background: url(../images/hedwig-color-bg.png) no-repeat; background-size: 100% auto;
+                &:nth-child(1) {background-image: url(../images/hedwig-color-bg-1.png); background-size: 105% auto; background-color: rgba(0,0,0,0.4); background-blend-mode: multiply; background-repeat: no-repeat;}
+                &:nth-child(2) {background-image: url(../images/hedwig-color-bg-3.png); background-size: 105% auto; background-color: rgba(0,0,0,0.3); background-blend-mode: multiply; background-repeat: no-repeat;}
+                &:nth-child(3) {background-image: url(../images/hedwig-color-bg-2.png); background-size: 105% auto; background-color: rgba(0,0,0,0.5); background-blend-mode: multiply; background-repeat: no-repeat;}
+                
+            }
+            .item-color-system{
+                width: 70%; margin-right: 1%; box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                @include tablet-mini {
+                    width: 20%; max-width: 300px; 
+                }
+                &:nth-child(1){ background: #C73400;}
+                &:nth-child(2){ background: #001BBD;}
+                &:nth-child(3){margin-right: 2%; background:#FFD02E;}
+                &:nth-child(4){margin-right: 0; background: #FFFAE6;
+                    .text-wrap{
+                    @include flex-column; width: 70%; 
+                    .title-sub{ color: $color-middle-black;}
+                }}
+                
             }
         }
         &.section-project-font{
@@ -198,6 +216,32 @@
         }
         &.section-project-mockup{
             background: $color-bg-grey;
+
+        }
+        &.section-project-concept-wrap{
+            .system-wrap{
+                .color-list-wrap{
+                    flex-direction: row;
+                    margin-bottom: 3rem;
+                }
+                .font-list-wrap{
+                    @media screen and (min-width: 768px) {@include flex-between; flex-wrap: wrap;}
+                    .list{
+                        @include flex-column; margin-bottom: 3rem;
+                        @media screen and (min-width: 768px) {
+                            width: 30%; margin-bottom: 3rem; 
+                            &:nth-child(2) { transition-delay: 0.2s;}
+                        }
+                        .font-wrap{
+                            background: rgba(0,0,0,0.05); border-radius: 1.4rem; margin-bottom: 0.2rem;
+                            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                            img{
+                                width:100%; max-width: 600px; margin: 0 auto; padding: 4rem 5rem;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 }
