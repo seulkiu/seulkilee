@@ -85,7 +85,7 @@ $color-white: #ffffff;
 }
 /*min-width:768px*/
 @mixin tablet-mini {
-  @media (min-width: #{$breakpoint-mobile}) {
+  @media (min-width: #{$breakpoint-tablet-mini}) {
     @content;
   }
 }

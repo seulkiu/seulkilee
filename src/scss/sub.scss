@@ -141,12 +141,12 @@
             }
         }
         .color-list-wrap{
-            @include flex-column;
+            @include flex-column; 
             @include tablet-mini{
                 flex-direction: row; justify-content: space-around;
             }
             .item{
-                width: 70%; box-sizing: border-box; background: $color-white; border-radius: 50%; 
+                width: 70%; box-sizing: border-box; background: $color-white; border-radius: 50%; margin-bottom: 2rem;
                 &::before {content: ""; display: block; padding-top: 100%;}
                 @include tablet-mini {
                     width: 30%; margin-right: 2%; max-width: 450px;
