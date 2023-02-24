@@ -177,6 +177,12 @@
                     .title-sub{ color: $color-white;}
                     .title-txt{ color: $color-white;}
                 }
+                &.item-recipia{
+                    .title-main{ color: $color-middle-black; text-align: center;}
+                    .title-sub{ color: $color-middle-black; font-weight: bold;}
+                    .title-txt{ color: $color-middle-black;}
+                    background: none; border:20px solid #EE5224; box-shadow:0 4px 8px rgba(0,0,0,0.2);
+                }
             }
             .item-helsi{
                 &:nth-child(1) { background: url(../images/helsi-color-bg-1.png) no-repeat; background-size: 100% auto;}
@@ -204,9 +210,10 @@
                     .text-wrap{
                     @include flex-column; width: 70%; 
                     .title-sub{ color: $color-middle-black;}
-                }}
-                
+                    }
+                } 
             }
+            
         }
         &.section-project-font{
             .title-main{color: $color-white;}

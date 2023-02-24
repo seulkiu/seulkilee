@@ -656,6 +656,22 @@ button {
 .container .sub-section .color-list-wrap .item .text-wrap .title-txt {
   color: #ffffff;
 }
+.container .sub-section .color-list-wrap .item.item-recipia {
+  background: none;
+  border: 20px solid #EE5224;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.container .sub-section .color-list-wrap .item.item-recipia .title-main {
+  color: #464646;
+  text-align: center;
+}
+.container .sub-section .color-list-wrap .item.item-recipia .title-sub {
+  color: #464646;
+  font-weight: bold;
+}
+.container .sub-section .color-list-wrap .item.item-recipia .title-txt {
+  color: #464646;
+}
 .container .sub-section .color-list-wrap .item-helsi:nth-child(1) {
   background: url(../images/helsi-color-bg-1.png) no-repeat;
   background-size: 100% auto;
