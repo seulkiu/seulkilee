@@ -527,6 +527,17 @@ button {
   color: #EE5224;
   background: #fff;
 }
+.container .sub-visual.mypet-visual {
+  background: linear-gradient(to bottom right, #7684FF, #3545CE);
+}
+.container .sub-visual.mypet-visual .bg {
+  width: 26%;
+  height: auto;
+  position: absolute;
+  max-width: 1000px;
+  right: 10rem;
+  top: 26rem;
+}
 .container .sub-section {
   padding: 4rem 0;
   background: #F2F1ED;
@@ -707,6 +718,26 @@ button {
 .container .sub-section .color-list-wrap .item.item-lawshop .text-wrap .title-txt {
   color: #464646;
 }
+.container .sub-section .color-list-wrap .item.item-mypet {
+  background: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .container .sub-section .color-list-wrap .item.item-mypet {
+    width: 30%;
+    margin-right: 2%;
+    max-width: 450px;
+  }
+}
+.container .sub-section .color-list-wrap .item.item-mypet .text-wrap .title-main {
+  color: #464646;
+}
+.container .sub-section .color-list-wrap .item.item-mypet .text-wrap .title-sub {
+  color: #464646;
+}
+.container .sub-section .color-list-wrap .item.item-mypet .text-wrap .title-txt {
+  color: #464646;
+}
 .container .sub-section .color-list-wrap .item-helsi:nth-child(1) {
   background: url(../images/helsi-color-bg-1.png) no-repeat;
   background-size: 100% auto;
@@ -746,6 +777,15 @@ button {
   background-color: rgba(0, 0, 0, 0.5);
   background-blend-mode: multiply;
   background-repeat: no-repeat;
+}
+.container .sub-section .color-list-wrap .item-mypet:nth-child(1) {
+  border: 20px solid #825CEF;
+}
+.container .sub-section .color-list-wrap .item-mypet:nth-child(2) {
+  border: 20px solid #6373FE;
+}
+.container .sub-section .color-list-wrap .item-mypet:nth-child(3) {
+  border: 20px solid #5EABF1;
 }
 .container .sub-section .color-list-wrap .item-color-system {
   width: 70%;
@@ -815,6 +855,36 @@ button {
   margin-right: 0;
   background: #FFFFFF;
 }
+.container .sub-section .color-list-wrap .item-color-system.mypet {
+  border-radius: 2rem;
+}
+@media (min-width: 768px) {
+  .container .sub-section .color-list-wrap .item-color-system.mypet {
+    width: 16%;
+    max-width: 300px;
+  }
+}
+.container .sub-section .color-list-wrap .item-color-system.mypet:nth-child(1) {
+  background: #E30613;
+}
+.container .sub-section .color-list-wrap .item-color-system.mypet:nth-child(2) {
+  background: #EA6E24;
+}
+.container .sub-section .color-list-wrap .item-color-system.mypet:nth-child(3) {
+  margin-right: 2%;
+  background: #00983A;
+}
+.container .sub-section .color-list-wrap .item-color-system.mypet:nth-child(4) {
+  margin-right: 2%;
+  background: #009FE3;
+}
+.container .sub-section .color-list-wrap .item-color-system.mypet:nth-child(4) .text-wrap .title-sub {
+  color: #ffffff;
+}
+.container .sub-section .color-list-wrap .item-color-system.mypet:nth-child(5) {
+  margin-right: 0;
+  background: #312783;
+}
 .container .sub-section.section-project-font {
   background: #0B588F;
 }
@@ -866,6 +936,17 @@ button {
   flex-direction: row;
   margin-bottom: 3rem;
 }
+.container .sub-section.section-project-concept-wrap .system-wrap .color-list-wrap.column {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .container .sub-section.section-project-concept-wrap .system-wrap .color-list-wrap.column {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
 @media screen and (min-width: 768px) {
   .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap {
     display: flex;
@@ -882,7 +963,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap .list {
-    width: 50%;
+    width: 30%;
     margin-bottom: 3rem;
   }
   .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap .list:nth-child(2) {
@@ -900,4 +981,26 @@ button {
   max-width: 600px;
   margin: 0 auto;
   padding: 4rem 5rem;
+}
+.container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.recipia .list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.recipia .list {
+    width: 50%;
+  }
+}
+.container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.lawshop .list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.lawshop .list {
+    width: 50%;
+  }
 }/*# sourceMappingURL=sub.css.map */
