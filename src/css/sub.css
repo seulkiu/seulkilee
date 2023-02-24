@@ -504,9 +504,6 @@ button {
 }
 .container .sub-visual.recipia-visual .bg {
   width: 26%;
-  height: auto;
-  position: absolute;
-  max-width: 1000px;
   right: 10rem;
 }
 .container .sub-visual.recipia-visual .inner .btn-view:hover {
@@ -518,9 +515,6 @@ button {
 }
 .container .sub-visual.lawshop-visual .bg {
   width: 26%;
-  height: auto;
-  position: absolute;
-  max-width: 1000px;
   right: 10rem;
 }
 .container .sub-visual.lawshop-visual .inner .btn-view:hover {
@@ -528,7 +522,7 @@ button {
   background: #fff;
 }
 .container .sub-visual.mypet-visual {
-  background: linear-gradient(to bottom right, #7684FF, #3545CE);
+  background: linear-gradient(to bottom right, #24966D, #24966D);
 }
 .container .sub-visual.mypet-visual .bg {
   width: 26%;
@@ -536,7 +530,6 @@ button {
   position: absolute;
   max-width: 1000px;
   right: 10rem;
-  top: 26rem;
 }
 .container .sub-section {
   padding: 4rem 0;
@@ -780,13 +773,13 @@ button {
   background-repeat: no-repeat;
 }
 .container .sub-section .color-list-wrap .item-mypet:nth-child(1) {
-  border: 20px solid #825CEF;
+  border: 20px solid #24966D;
 }
 .container .sub-section .color-list-wrap .item-mypet:nth-child(2) {
-  border: 20px solid #6373FE;
+  border: 20px solid #24966D;
 }
 .container .sub-section .color-list-wrap .item-mypet:nth-child(3) {
-  border: 20px solid #5EABF1;
+  border: 20px solid #24966D;
 }
 .container .sub-section .color-list-wrap .item-color-system {
   width: 70%;
@@ -1006,9 +999,9 @@ button {
   }
 }
 .container .sub-section.section-project-flowchart-wrap .inner .conts-wrap .flow-chart {
-  width: 50%;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 60%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.4);
-  border-radius: 2rem;
+  border-radius: 1.4rem;
   margin: 0 auto;
 }/*# sourceMappingURL=sub.css.map */
