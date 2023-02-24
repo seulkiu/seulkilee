@@ -104,7 +104,20 @@
             }
         }
         &.recipia-visual{
-            background: #ee5224;
+            background: #EE5224;
+            .bg{
+                width: 26%; height: auto; position: absolute; max-width: 1000px; right: 10rem;
+            }
+            .inner{
+                .btn-view{
+                    &:hover{
+                        color: #EE5224; background: #fff;
+                    }
+                }
+            }
+        }
+        &.lawshop-visual{
+            background: linear-gradient(to bottom right, #61E2FE, #7567FF);
             .bg{
                 width: 26%; height: auto; position: absolute; max-width: 1000px; right: 10rem;
             }
@@ -183,6 +196,18 @@
                     .title-txt{ color: $color-middle-black;}
                     background: none; border:20px solid #EE5224; box-shadow:0 4px 8px rgba(0,0,0,0.2);
                 }
+                &.item-lawshop{
+                    @include tablet-mini {
+                        width: 30%; margin-right: 2%; max-width: 450px;
+                    }
+                    .text-wrap{ 
+                        .title-main{color: $color-middle-black;}
+                        .title-sub{color: $color-middle-black;}
+                        .title-txt{color: $color-middle-black;}
+                    }
+                    background: none;
+                    border:20px solid #7567FF; box-shadow:0 4px 8px rgba(0,0,0,0.2);
+                }
             }
             .item-helsi{
                 &:nth-child(1) { background: url(../images/helsi-color-bg-1.png) no-repeat; background-size: 100% auto;}
@@ -196,6 +221,9 @@
                 &:nth-child(1) {background-image: url(../images/hedwig-color-bg-1.png); background-size: 105% auto; background-color: rgba(0,0,0,0.4); background-blend-mode: multiply; background-repeat: no-repeat;}
                 &:nth-child(2) {background-image: url(../images/hedwig-color-bg-3.png); background-size: 105% auto; background-color: rgba(0,0,0,0.3); background-blend-mode: multiply; background-repeat: no-repeat;}
                 &:nth-child(3) {background-image: url(../images/hedwig-color-bg-2.png); background-size: 105% auto; background-color: rgba(0,0,0,0.5); background-blend-mode: multiply; background-repeat: no-repeat;}
+                
+            }
+            .item-lawshop{
                 
             }
             .item-color-system{
@@ -212,6 +240,26 @@
                     .title-sub{ color: $color-middle-black;}
                     }
                 } 
+                &.recipia{
+                    &:nth-child(1){ background: #EE5224;}
+                    &:nth-child(2){ background: #FFFFFF;
+                        .text-wrap{
+                            .title-sub{ color: $color-middle-black;}
+                        }
+                    }
+                    &:nth-child(3){margin-right: 2%; background:#9C9C9C;}
+                    &:nth-child(4){margin-right: 0; background: #333333;
+                        .text-wrap{
+                            .title-sub{ color: $color-white;}
+                        }
+                    }
+                }
+                &.lawshop{
+                    &:nth-child(1){ background: linear-gradient(to bottom right, #61E2FE, #7567FF);}
+                    &:nth-child(2){ background: #7567FF;}
+                    &:nth-child(3){margin-right: 2%; background:#FF6229;}
+                    &:nth-child(4){margin-right: 0; background: #FFFFFF;}
+                }
             }
             
         }
@@ -253,7 +301,7 @@
                     .list{
                         @include flex-column; margin-bottom: 3rem;
                         @media screen and (min-width: 768px) {
-                            width: 30%; margin-bottom: 3rem; 
+                            width: 50%; margin-bottom: 3rem; 
                             &:nth-child(2) { transition-delay: 0.2s;}
                         }
                         .font-wrap{

@@ -500,7 +500,7 @@ button {
   background: #fff;
 }
 .container .sub-visual.recipia-visual {
-  background: #ee5224;
+  background: #EE5224;
 }
 .container .sub-visual.recipia-visual .bg {
   width: 26%;
@@ -510,6 +510,20 @@ button {
   right: 10rem;
 }
 .container .sub-visual.recipia-visual .inner .btn-view:hover {
+  color: #EE5224;
+  background: #fff;
+}
+.container .sub-visual.lawshop-visual {
+  background: linear-gradient(to bottom right, #61E2FE, #7567FF);
+}
+.container .sub-visual.lawshop-visual .bg {
+  width: 26%;
+  height: auto;
+  position: absolute;
+  max-width: 1000px;
+  right: 10rem;
+}
+.container .sub-visual.lawshop-visual .inner .btn-view:hover {
   color: #EE5224;
   background: #fff;
 }
@@ -672,6 +686,27 @@ button {
 .container .sub-section .color-list-wrap .item.item-recipia .title-txt {
   color: #464646;
 }
+.container .sub-section .color-list-wrap .item.item-lawshop {
+  background: none;
+  border: 20px solid #7567FF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 768px) {
+  .container .sub-section .color-list-wrap .item.item-lawshop {
+    width: 30%;
+    margin-right: 2%;
+    max-width: 450px;
+  }
+}
+.container .sub-section .color-list-wrap .item.item-lawshop .text-wrap .title-main {
+  color: #464646;
+}
+.container .sub-section .color-list-wrap .item.item-lawshop .text-wrap .title-sub {
+  color: #464646;
+}
+.container .sub-section .color-list-wrap .item.item-lawshop .text-wrap .title-txt {
+  color: #464646;
+}
 .container .sub-section .color-list-wrap .item-helsi:nth-child(1) {
   background: url(../images/helsi-color-bg-1.png) no-repeat;
   background-size: 100% auto;
@@ -746,6 +781,40 @@ button {
 .container .sub-section .color-list-wrap .item-color-system:nth-child(4) .text-wrap .title-sub {
   color: #464646;
 }
+.container .sub-section .color-list-wrap .item-color-system.recipia:nth-child(1) {
+  background: #EE5224;
+}
+.container .sub-section .color-list-wrap .item-color-system.recipia:nth-child(2) {
+  background: #FFFFFF;
+}
+.container .sub-section .color-list-wrap .item-color-system.recipia:nth-child(2) .text-wrap .title-sub {
+  color: #464646;
+}
+.container .sub-section .color-list-wrap .item-color-system.recipia:nth-child(3) {
+  margin-right: 2%;
+  background: #9C9C9C;
+}
+.container .sub-section .color-list-wrap .item-color-system.recipia:nth-child(4) {
+  margin-right: 0;
+  background: #333333;
+}
+.container .sub-section .color-list-wrap .item-color-system.recipia:nth-child(4) .text-wrap .title-sub {
+  color: #ffffff;
+}
+.container .sub-section .color-list-wrap .item-color-system.lawshop:nth-child(1) {
+  background: linear-gradient(to bottom right, #61E2FE, #7567FF);
+}
+.container .sub-section .color-list-wrap .item-color-system.lawshop:nth-child(2) {
+  background: #7567FF;
+}
+.container .sub-section .color-list-wrap .item-color-system.lawshop:nth-child(3) {
+  margin-right: 2%;
+  background: #FF6229;
+}
+.container .sub-section .color-list-wrap .item-color-system.lawshop:nth-child(4) {
+  margin-right: 0;
+  background: #FFFFFF;
+}
 .container .sub-section.section-project-font {
   background: #0B588F;
 }
@@ -813,7 +882,7 @@ button {
 }
 @media screen and (min-width: 768px) {
   .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap .list {
-    width: 30%;
+    width: 50%;
     margin-bottom: 3rem;
   }
   .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap .list:nth-child(2) {
