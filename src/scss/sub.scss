@@ -52,6 +52,14 @@
         .title-txt{color: $color-white;}
         .label {font-weight: 500; opacity: 0.7;}
         @include flex; align-items: center; justify-self: center; position: relative;
+        .bg{
+            height: auto; position: absolute; max-width: 1000px; top:1.2rem; right: 0; display: none;
+            @include tablet-mini {width: 70%; top: 50%; transform: translateY(-50%); display: block;}
+            @media screen and (min-width:768px) { width: 78%; top: 50%; transform: translateY(-50%);display: block;}
+            @media screen and (min-width:980px) { width: 80%; top: 50%; transform: translateY(-50%); display: block;}
+            @media screen and (min-width:1200px) { top: 50%; transform: translateY(-50%); display: block;}
+            @media screen and (min-width:1400px) { width:100%; top: 50%; transform: translateY(-50%);display: block; }
+        }
         .inner {
             padding: 0 24px;
             @media screen and (min-width:768px) { padding: 2rem 40px;}
@@ -80,7 +88,7 @@
         &.hedwig-visual {
             background: url(../images/bg-hedwig-pattern.jpeg) no-repeat center center; background-size: 200% auto;
             .bg{
-                width: 78%; height: auto; position: absolute; max-width: 1000px; top:1.2rem; right: 0; display: none;
+                width: 78%; height: auto; position: absolute; max-width: 1000px; top:1.2rem; right: 0;
                 @include tablet-mini {width: 70%; top: 50%; transform: translateY(-50%); display: block; right: -3rem;}
                 @media screen and (min-width:768px) { width: 78%; top: 50%; transform: translateY(-50%); right: -3rem; display: block;}
                 @media screen and (min-width:980px) { width: 80%; top: 50%; transform: translateY(-50%); display: block;}
@@ -97,6 +105,16 @@
         }
         &.recipia-visual{
             background: #ee5224;
+            .bg{
+                width: 26%; height: auto; position: absolute; max-width: 1000px; right: 10rem;
+            }
+            .inner{
+                .btn-view{
+                    &:hover{
+                        color: #EE5224; background: #fff;
+                    }
+                }
+            }
         }
     }
     .sub-section{
