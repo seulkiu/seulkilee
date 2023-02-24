@@ -546,6 +546,7 @@ button {
   padding: 0;
 }
 .container .sub-section .inner {
+  text-align: center;
   padding: 0 24px;
 }
 @media (max-width: breakpoint-mobile) {
@@ -1003,4 +1004,11 @@ button {
   .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.lawshop .list {
     width: 50%;
   }
+}
+.container .sub-section.section-project-flowchart-wrap .inner .conts-wrap .flow-chart {
+  width: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 2rem;
+  margin: 0 auto;
 }/*# sourceMappingURL=sub.css.map */
