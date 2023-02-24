@@ -295,6 +295,26 @@ button {
 }
 .container .sub-visual {
   height: 100vh;
+  display: flex;
+  align-items: center;
+  align-items: center;
+  justify-self: center;
+  position: relative;
+  /*Sub-visual 개별스타일*/
+}
+.container .sub-visual .title-main {
+  color: #ffffff;
+  padding-bottom: 1rem;
+}
+.container .sub-visual .title-deskTxt {
+  color: #ffffff;
+}
+.container .sub-visual .title-txt {
+  color: #ffffff;
+}
+.container .sub-visual .label {
+  font-weight: 500;
+  opacity: 0.7;
 }
 .container .sub-visual .inner {
   padding: 0 24px;
@@ -323,6 +343,34 @@ button {
     max-width: 1400px;
   }
 }
+.container .sub-visual .inner .sub-title-wrap {
+  padding: 3rem 0;
+}
+.container .sub-visual .inner .sub-title-wrap .title-main {
+  font-size: 42px;
+}
+@media screen and (min-width: 768px) {
+  .container .sub-visual .inner .sub-title-wrap .title-main {
+    font-size: 6vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container .sub-visual .inner .sub-title-wrap .title-main {
+    font-size: 90px;
+  }
+}
+.container .sub-visual .inner .project-info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: start;
+  align-items: baseline;
+  opacity: 0.8;
+}
+.container .sub-visual .inner .project-info .label {
+  font-weight: bold;
+  padding-right: 2rem;
+}
 .container .sub-visual .inner .btn-view {
   color: #ffffff;
   display: inline-block;
@@ -348,25 +396,6 @@ button {
 .container .sub-visual.hedwig-visual {
   background: url(../images/bg-hedwig-pattern.jpeg) no-repeat center center;
   background-size: 200% auto;
-  display: flex;
-  align-items: center;
-  align-items: center;
-  justify-self: center;
-  position: relative;
-}
-.container .sub-visual.hedwig-visual .title-main {
-  color: #ffffff;
-  padding-bottom: 1rem;
-}
-.container .sub-visual.hedwig-visual .title-deskTxt {
-  color: #ffffff;
-}
-.container .sub-visual.hedwig-visual .title-txt {
-  color: #ffffff;
-}
-.container .sub-visual.hedwig-visual .label {
-  font-weight: 500;
-  opacity: 0.7;
 }
 .container .sub-visual.hedwig-visual .bg {
   width: 78%;
@@ -420,64 +449,12 @@ button {
     display: block;
   }
 }
-.container .sub-visual.hedwig-visual .inner {
-  padding: 0 24px;
-}
-@media screen and (min-width: 768px) {
-  .container .sub-visual.hedwig-visual .inner {
-    padding: 2rem 40px;
-  }
-}
-@media screen and (min-width: 980px) {
-  .container .sub-visual.hedwig-visual .inner {
-    padding: 4rem 40px;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container .sub-visual.hedwig-visual .inner {
-    margin: 0 auto;
-    padding: 6rem 60px;
-    width: 1200px;
-    max-width: 1200px;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .container .sub-visual.hedwig-visual .inner {
-    width: 1400px;
-    max-width: 1400px;
-  }
-}
-.container .sub-visual.hedwig-visual .inner .sub-title-wrap {
-  padding: 3rem 0;
-}
-.container .sub-visual.hedwig-visual .inner .sub-title-wrap .title-main {
-  font-size: 42px;
-}
-@media screen and (min-width: 768px) {
-  .container .sub-visual.hedwig-visual .inner .sub-title-wrap .title-main {
-    font-size: 6vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container .sub-visual.hedwig-visual .inner .sub-title-wrap .title-main {
-    font-size: 90px;
-  }
-}
-.container .sub-visual.hedwig-visual .inner .project-info {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: start;
-  align-items: baseline;
-  opacity: 0.8;
-}
-.container .sub-visual.hedwig-visual .inner .project-info .label {
-  font-weight: bold;
-  padding-right: 2rem;
-}
 .container .sub-visual.hedwig-visual .inner .btn-view:hover {
   color: #C73400;
   background: #fff;
+}
+.container .sub-visual.recipia-visual {
+  background: #ee5224;
 }
 .container .sub-section {
   padding: 4rem 0;
@@ -782,6 +759,3 @@ button {
   margin: 0 auto;
   padding: 4rem 5rem;
 }/*# sourceMappingURL=sub.css.map */
-
-
-

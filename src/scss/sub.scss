@@ -47,27 +47,38 @@
     /*--------(Common)Sub-Visual 공통스타일--------*/
     .sub-visual{
         height: 100vh;
+        .title-main{color: $color-white; padding-bottom: 1rem;}
+        .title-deskTxt{color: $color-white;}
+        .title-txt{color: $color-white;}
+        .label {font-weight: 500; opacity: 0.7;}
+        @include flex; align-items: center; justify-self: center; position: relative;
         .inner {
             padding: 0 24px;
             @media screen and (min-width:768px) { padding: 2rem 40px;}
             @media screen and (min-width:980px) { padding: 4rem 40px;}
             @media screen and (min-width:1200px) { margin: 0 auto; padding: 6rem 60px; width: 1200px; max-width: 1200px;}
             @media screen and (min-width:1400px) { width: 1400px; max-width: 1400px;}
+            .sub-title-wrap{
+                padding: 3rem 0;
+                .title-main {
+                    @include font-bigTitle;
+                }
+            }
+            .project-info{
+                @include flex-row; justify-content: start; align-items: baseline; opacity: 0.8;
+                .label{ font-weight: bold; padding-right: 2rem;}    
+            }  
             .btn-view {
                 color: $color-white; display: inline-block; width: 280px; height: 60px; font-weight: 400; border: 1px solid $color-white; transition: all 0.4s ease; margin-top:2.6rem; box-sizing: border-box; font-weight: bold;
                 @include flex; justify-content: center;
             }
         }
+        /*Sub-visual 개별스타일*/
         &.helsi-visual {
             background: #0B588F; display: flex; align-items: center; justify-content: center; padding: 6rem 0;
         }
         &.hedwig-visual {
-            .title-main{color: $color-white; padding-bottom: 1rem;}
-            .title-deskTxt{color: $color-white;}
-            .title-txt{color: $color-white;}
-            .label {font-weight: 500; opacity: 0.7;}
             background: url(../images/bg-hedwig-pattern.jpeg) no-repeat center center; background-size: 200% auto;
-            @include flex; align-items: center; justify-self: center; position: relative;
             .bg{
                 width: 78%; height: auto; position: absolute; max-width: 1000px; top:1.2rem; right: 0; display: none;
                 @include tablet-mini {width: 70%; top: 50%; transform: translateY(-50%); display: block; right: -3rem;}
@@ -77,28 +88,15 @@
                 @media screen and (min-width:1400px) { width:100%; top: 50%; transform: translateY(-50%); right: 0.2rem; display: block;}
             }
             .inner{
-                padding: 0 24px;
-                @media screen and (min-width:768px) { padding: 2rem 40px;}
-                @media screen and (min-width:980px) { padding: 4rem 40px;}
-                @media screen and (min-width:1200px) { margin: 0 auto; padding: 6rem 60px; width: 1200px; max-width: 1200px;}
-                @media screen and (min-width:1400px) { width: 1400px; max-width: 1400px;}
-                .sub-title-wrap{
-                    padding: 3rem 0;
-                    .title-main {
-                        @include font-bigTitle;
-                    }
-                }
-                .project-info{
-                    @include flex-row; justify-content: start; align-items: baseline; opacity: 0.8;
-                    .label{ font-weight: bold; padding-right: 2rem;}    
-                }  
                 .btn-view{
                     &:hover{
                         color:#C73400; background: #fff;
                     }
-                }
-                
+                } 
             }
+        }
+        &.recipia-visual{
+            background: #ee5224;
         }
     }
     .sub-section{
