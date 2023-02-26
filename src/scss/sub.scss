@@ -522,7 +522,16 @@
                 }
             }
         }
-        &.section-project-contents-wrap{}
+        &.section-project-wireframe-wrap{
+            .inner{
+                margin-bottom: 10rem;
+                .conts-wrap{
+                    .flow-chart{
+                        width: 70%; box-shadow: 0 4px 20px rgba(0,0,0,0.1); background: rgba(255,255,255,0.4); border-radius: 1.2rem; margin: 0 auto; padding: 3rem
+                    }
+                }
+            }
+        }
         &.section-project-quick-wrap{
             .inner{
                 @include flex; justify-content: space-around; width: 100%;
