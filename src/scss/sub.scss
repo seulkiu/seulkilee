@@ -460,6 +460,7 @@
                 background: linear-gradient(to bottom right, #61E2FE, #7567FF);
             }
         }
+        
         &.section-project-place-wrap{
             .inner{
                 @include flex; justify-content: space-around; width: 100%;
