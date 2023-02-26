@@ -1018,6 +1018,24 @@ button {
 .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.classcheck .list {
   width: 80%;
 }
+.container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.hedwig {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) {
+  .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.hedwig {
+    display: flex;
+    flex-direction: row;
+  }
+}
+.container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.hedwig .list {
+  margin-bottom: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.hedwig .list {
+    width: 50%;
+    margin-right: 2rem;
+  }
+}
 .container .sub-section.section-project-icon-wrap .conts-wrap {
   display: flex;
   align-items: center;
