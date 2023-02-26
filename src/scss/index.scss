@@ -88,6 +88,8 @@
 
 .container{
     .main_visual{
+        height: 100vh;
+        @include flex; 
         padding: 8rem 0 8rem 0;
         @media screen and (min-width:980px){padding-bottom: 10rem;}
         .inner{

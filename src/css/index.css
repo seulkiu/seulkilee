@@ -450,6 +450,9 @@ button {
 }
 
 .container .main_visual {
+  height: 100vh;
+  display: flex;
+  align-items: center;
   padding: 8rem 0 8rem 0;
 }
 @media screen and (min-width: 980px) {
