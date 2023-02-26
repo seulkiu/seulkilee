@@ -514,8 +514,9 @@ button {
   background: linear-gradient(to bottom right, #61E2FE, #7567FF);
 }
 .container .sub-visual.lawshop-visual .bg {
-  width: 26%;
+  width: 30%;
   right: 10rem;
+  top: 26rem;
 }
 .container .sub-visual.lawshop-visual .inner .btn-view:hover {
   color: #EE5224;
@@ -530,6 +531,9 @@ button {
   position: absolute;
   max-width: 1000px;
   right: 5rem;
+}
+.container .sub-visual.classcheck-visual {
+  background: #185BDE;
 }
 .container .sub-section {
   padding: 4rem 0;
@@ -731,6 +735,19 @@ button {
 }
 .container .sub-section .color-list-wrap .item.item-mypet .text-wrap .title-txt {
   color: #464646;
+}
+.container .sub-section .color-list-wrap .item.item-classcheck {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: #185BDE;
+}
+.container .sub-section .color-list-wrap .item.item-classcheck .title-main {
+  color: #ffffff;
+}
+.container .sub-section .color-list-wrap .item.item-classcheck .title-sub {
+  color: #ffffff;
+}
+.container .sub-section .color-list-wrap .item.item-classcheck .title-txt {
+  color: #ffffff;
 }
 .container .sub-section .color-list-wrap .item-helsi:nth-child(1) {
   background: url(../images/helsi-color-bg-1.png) no-repeat;
@@ -941,13 +958,10 @@ button {
     justify-content: space-around;
   }
 }
-@media screen and (min-width: 768px) {
-  .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
+.container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap .list {
   display: flex;
@@ -998,11 +1012,29 @@ button {
     width: 50%;
   }
 }
+.container .sub-section.section-project-concept-wrap .system-wrap .font-list-wrap.classcheck .list {
+  width: 80%;
+}
+.container .sub-section.section-project-icon-wrap .conts-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container .sub-section.section-project-icon-wrap .conts-wrap .icon-set {
+  width: 50%;
+}
 .container .sub-section.section-project-flowchart-wrap .inner .conts-wrap .flow-chart {
   width: 60%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
   background: rgba(255, 255, 255, 0.4);
   border-radius: 1.4rem;
+  margin: 0 auto;
+}
+.container .sub-section.section-project-component-wrap .inner .conts-wrap .component {
+  width: 70%;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.01);
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 1.2rem;
   margin: 0 auto;
 }
 .container .sub-section.section-project-main-wrap {
