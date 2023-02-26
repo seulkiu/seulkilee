@@ -106,7 +106,8 @@
         &.recipia-visual{
             background: #EE5224;
             .bg{
-                width: 27%; right: 10rem; top: 26rem;
+                width: 26%; right: 10rem; 
+                @include tablet-mini {top: 60%; transform: translateY(-55%); display: block;}
             }
             .inner{
                 .btn-view{

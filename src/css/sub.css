@@ -503,9 +503,15 @@ button {
   background: #EE5224;
 }
 .container .sub-visual.recipia-visual .bg {
-  width: 27%;
+  width: 26%;
   right: 10rem;
-  top: 26rem;
+}
+@media (min-width: 768px) {
+  .container .sub-visual.recipia-visual .bg {
+    top: 60%;
+    transform: translateY(-55%);
+    display: block;
+  }
 }
 .container .sub-visual.recipia-visual .inner .btn-view:hover {
   color: #EE5224;
