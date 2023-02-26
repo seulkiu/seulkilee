@@ -106,7 +106,7 @@
         &.recipia-visual{
             background: #EE5224;
             .bg{
-                width: 26%; right: 10rem;
+                width: 27%; right: 10rem; top: 26rem;
             }
             .inner{
                 .btn-view{
@@ -458,6 +458,19 @@
             }
             &.lawshop{
                 background: linear-gradient(to bottom right, #61E2FE, #7567FF);
+            }
+            &.recipia{
+                padding: 3rem 0; background: #EE5224;
+                .inner{
+                    flex-direction: column;
+                    .conts-wrap{
+                        .main-wrap{
+                            .img-wrap{
+                                width: 120%;
+                            }
+                        }
+                    }
+                }
             }
         }
         

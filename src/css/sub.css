@@ -503,8 +503,9 @@ button {
   background: #EE5224;
 }
 .container .sub-visual.recipia-visual .bg {
-  width: 26%;
+  width: 27%;
   right: 10rem;
+  top: 26rem;
 }
 .container .sub-visual.recipia-visual .inner .btn-view:hover {
   color: #EE5224;
@@ -1077,6 +1078,16 @@ button {
 }
 .container .sub-section.section-project-main-wrap.lawshop {
   background: linear-gradient(to bottom right, #61E2FE, #7567FF);
+}
+.container .sub-section.section-project-main-wrap.recipia {
+  padding: 3rem 0;
+  background: #EE5224;
+}
+.container .sub-section.section-project-main-wrap.recipia .inner {
+  flex-direction: column;
+}
+.container .sub-section.section-project-main-wrap.recipia .inner .conts-wrap .main-wrap .img-wrap {
+  width: 120%;
 }
 .container .sub-section.section-project-place-wrap .inner {
   display: flex;
