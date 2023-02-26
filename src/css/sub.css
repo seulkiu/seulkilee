@@ -527,13 +527,15 @@ button {
 }
 .container .sub-visual.mypet-visual .bg {
   width: 50%;
-  height: auto;
-  position: absolute;
-  max-width: 1000px;
   right: 5rem;
 }
 .container .sub-visual.classcheck-visual {
   background: #185BDE;
+}
+.container .sub-visual.classcheck-visual .bg {
+  width: 26%;
+  right: 10rem;
+  top: 26rem;
 }
 .container .sub-section {
   padding: 4rem 0;
@@ -1023,6 +1025,9 @@ button {
 .container .sub-section.section-project-icon-wrap .conts-wrap .icon-set {
   width: 50%;
 }
+.container .sub-section.section-project-icon-wrap.lawshop .icon-set {
+  width: 30%;
+}
 .container .sub-section.section-project-flowchart-wrap .inner .conts-wrap .flow-chart {
   width: 60%;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -1059,10 +1064,19 @@ button {
   margin-bottom: 10rem;
 }
 .container .sub-section.section-project-main-wrap .inner .conts-wrap .main-wrap .title-wrap .title-sub {
-  margin-bottom: 2rem;
+  margin-bottom: 1.2rem;
 }
 .container .sub-section.section-project-main-wrap .inner .conts-wrap .main-wrap .img-wrap {
   width: 40%;
+}
+.container .sub-section.section-project-main-wrap.classcheck {
+  background: #185BDE;
+}
+.container .sub-section.section-project-main-wrap.classcheck .inner .conts-wrap .main-wrap .img-wrap {
+  width: 30%;
+}
+.container .sub-section.section-project-main-wrap.lawshop {
+  background: linear-gradient(to bottom right, #61E2FE, #7567FF);
 }
 .container .sub-section.section-project-place-wrap .inner {
   display: flex;
@@ -1086,23 +1100,26 @@ button {
 .container .sub-section.section-project-place-wrap .inner .conts-wrap .img-wrap img {
   width: 50%;
 }
-.container .sub-section.section-project-market-wrap .inner {
+.container .sub-section.section-project-market-wrap .inner, .container .sub-section.section-project-find-wrap .inner {
   display: flex;
   align-items: center;
   justify-content: space-around;
   flex-direction: row-reverse;
 }
-.container .sub-section.section-project-market-wrap .inner .title-wrap {
+.container .sub-section.section-project-market-wrap .inner .title-wrap, .container .sub-section.section-project-find-wrap .inner .title-wrap {
   text-align: left;
 }
-.container .sub-section.section-project-market-wrap .inner .conts-wrap {
+.container .sub-section.section-project-market-wrap .inner .title-wrap .title-sub, .container .sub-section.section-project-find-wrap .inner .title-wrap .title-sub {
+  padding-bottom: 1.2rem;
+}
+.container .sub-section.section-project-market-wrap .inner .conts-wrap, .container .sub-section.section-project-find-wrap .inner .conts-wrap {
   width: 50%;
 }
-.container .sub-section.section-project-market-wrap .inner .conts-wrap .img-wrap {
+.container .sub-section.section-project-market-wrap .inner .conts-wrap .img-wrap, .container .sub-section.section-project-find-wrap .inner .conts-wrap .img-wrap {
   display: flex;
   align-items: center;
 }
-.container .sub-section.section-project-market-wrap .inner .conts-wrap .img-wrap img {
+.container .sub-section.section-project-market-wrap .inner .conts-wrap .img-wrap img, .container .sub-section.section-project-find-wrap .inner .conts-wrap .img-wrap img {
   width: 50%;
 }
 .container .sub-section.section-project-contents-wrap .inner {
@@ -1113,6 +1130,9 @@ button {
 .container .sub-section.section-project-contents-wrap .inner .title-wrap {
   text-align: left;
 }
+.container .sub-section.section-project-contents-wrap .inner .title-wrap .title-main {
+  padding-bottom: 1.2rem;
+}
 .container .sub-section.section-project-contents-wrap .inner .conts-wrap {
   width: 50%;
 }
@@ -1121,5 +1141,27 @@ button {
   align-items: center;
 }
 .container .sub-section.section-project-contents-wrap .inner .conts-wrap .img-wrap img {
+  width: 50%;
+}
+.container .sub-section.section-project-quick-wrap .inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+}
+.container .sub-section.section-project-quick-wrap .inner .title-wrap {
+  text-align: left;
+}
+.container .sub-section.section-project-quick-wrap .inner .title-wrap .title-sub {
+  padding-bottom: 1.2rem;
+}
+.container .sub-section.section-project-quick-wrap .inner .conts-wrap {
+  width: 50%;
+}
+.container .sub-section.section-project-quick-wrap .inner .conts-wrap .img-wrap {
+  display: flex;
+  align-items: center;
+}
+.container .sub-section.section-project-quick-wrap .inner .conts-wrap .img-wrap img {
   width: 50%;
 }/*# sourceMappingURL=sub.css.map */

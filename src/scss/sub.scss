@@ -132,11 +132,14 @@
         &.mypet-visual{
             background: linear-gradient(to bottom right, #24966D, #24966D);
             .bg{
-                width: 50%; height: auto; position: absolute; max-width: 1000px; right: 5rem;
+                width: 50%; right: 5rem;
             }
         }
         &.classcheck-visual{
             background: #185BDE;
+            .bg{
+                width: 26%; right: 10rem; top: 26rem;
+            }
         }
     }
     .sub-section{
@@ -392,9 +395,13 @@
                 @include flex; justify-content: center;
                 .icon-set{
                 width: 50%; 
+                }
             }
+            &.lawshop{
+                .icon-set{
+                    width: 30%; 
+                    }
             }
-            
         }
         &.section-project-flowchart-wrap{
             .inner{
@@ -426,7 +433,7 @@
                         .title-wrap{
                             text-align: left; margin-bottom: 10rem;
                             .title-sub{
-                                margin-bottom: 2rem;
+                                margin-bottom: 1.2rem;
                             }
                         }
                         .img-wrap{
@@ -434,6 +441,23 @@
                         }
                     }
                 }
+            }
+            &.classcheck{
+                background: #185BDE; 
+                .inner{
+                    .conts-wrap{
+                        .main-wrap{
+                            .title-wrap{}
+                            .img-wrap{
+                                width: 30%
+                            }
+                        }
+                    }
+                }
+                
+            }
+            &.lawshop{
+                background: linear-gradient(to bottom right, #61E2FE, #7567FF);
             }
         }
         &.section-project-place-wrap{
@@ -452,11 +476,12 @@
                 }
             }
         }
-        &.section-project-market-wrap{
+        &.section-project-market-wrap, &.section-project-find-wrap{
             .inner{
                 @include flex; justify-content: space-around; flex-direction: row-reverse; 
                 .title-wrap{
                     text-align: left;
+                    .title-sub{padding-bottom: 1.2rem;}
                 }
                 .conts-wrap{
                     width: 50%;
@@ -472,6 +497,24 @@
                 @include flex; justify-content: space-around;
                 .title-wrap{
                     text-align: left;
+                    .title-main{ padding-bottom: 1.2rem;}
+                }
+                .conts-wrap{
+                    width: 50%;
+                    .img-wrap{
+                        @include flex;
+                        img{ width: 50%;}
+                    }
+                }
+            }
+        }
+        &.section-project-contents-wrap{}
+        &.section-project-quick-wrap{
+            .inner{
+                @include flex; justify-content: space-around; width: 100%;
+                .title-wrap{
+                    text-align: left;
+                    .title-sub{padding-bottom: 1.2rem;}
                 }
                 .conts-wrap{
                     width: 50%;
