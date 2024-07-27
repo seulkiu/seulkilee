@@ -440,6 +440,9 @@ button {
   justify-content: center;
   padding: 6rem 0;
 }
+.container .sub-visual.orangedata-visual {
+  background: #333;
+}
 .container .sub-visual.hedwig-visual {
   background: url(../images/bg-hedwig-pattern.jpeg) no-repeat center center;
   background-size: 200% auto;
@@ -951,6 +954,10 @@ button {
 }
 .container .sub-section.section-project-mockup {
   background: #F2F1ED;
+}
+.container .sub-section.section-project-concept-wrap.orangedata img {
+  width: 60%;
+  padding-bottom: 3rem;
 }
 .container .sub-section.section-project-concept-wrap .system-wrap .color-list-wrap {
   flex-direction: row;

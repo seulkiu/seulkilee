@@ -85,7 +85,9 @@
         &.helsi-visual {
             background: #0B588F; display: flex; align-items: center; justify-content: center; padding: 6rem 0;
         }
-        
+        &.orangedata-visual{
+            background: #333;
+        }
         &.hedwig-visual {
             background: url(../images/bg-hedwig-pattern.jpeg) no-repeat center center; background-size: 200% auto;
             .bg{
@@ -340,6 +342,9 @@
 
         }
         &.section-project-concept-wrap{
+            &.orangedata{
+                img{width: 60%; padding-bottom: 3rem;}
+            }
             .system-wrap{
                 .color-list-wrap{
                     flex-direction: row;
