@@ -85,6 +85,12 @@
         &.helsi-visual {
             background: #0B588F; display: flex; align-items: center; justify-content: center; padding: 6rem 0;
         }
+        &.ptz-logo-visual{
+            background: #F3AF00; isplay: flex; align-items: center; justify-content: center; padding: 6rem 0; 
+            .ptz-logo{
+                width: 20%;
+            }
+        }
         &.orangedata-visual{
             background: #333;
         }
@@ -143,6 +149,15 @@
             background: #185BDE;
             .bg{
                 width: 26%; right: 10rem; top: 26rem;
+            }
+        }
+        &.ptz-app-visual{
+            background: #3859CE;
+            .bg{
+                img{
+                    width: 50%; 
+                }
+                
             }
         }
     }
@@ -242,6 +257,12 @@
                     .title-txt{color: $color-white}
                     // border: 20px solid #185BDE; 
                     box-shadow:0 4px 8px rgba(0,0,0,0.2); background: #185BDE;
+                }
+                &.item-ptz-app{
+                    .title-main{color: $color-white;}
+                    .title-sub{color: $color-white;}
+                    .title-txt{color: $color-white}
+                    box-shadow:0 4px 8px rgba(0,0,0,0.2); background: #3F59B2;
                 }
             }
             .item-helsi{
@@ -344,6 +365,9 @@
         &.section-project-concept-wrap{
             &.orangedata{
                 img{width: 60%; padding-bottom: 3rem;}
+            }
+            &.ptz-app{
+                img{width: 60%;padding-bottom: 3rem;}
             }
             .system-wrap{
                 .color-list-wrap{
@@ -460,6 +484,9 @@
                         }
                     }
                 }
+            }
+            &.ptz-app{
+                background: #3859CE;
             }
             &.classcheck{
                 background: #185BDE; 
